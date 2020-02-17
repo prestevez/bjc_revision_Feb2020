@@ -62,7 +62,7 @@ date()
 ```
 
 ```
-[1] "Mon Feb 17 11:50:13 2020"
+[1] "Mon Feb 17 12:59:39 2020"
 ```
 
 ```r
@@ -71,41 +71,37 @@ sessionInfo()
 
 ```
 R version 3.6.2 (2019-12-12)
-Platform: x86_64-pc-linux-gnu (64-bit)
-Running under: Debian GNU/Linux 10 (buster)
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+Running under: Windows 10 x64 (build 18362)
 
 Matrix products: default
-BLAS/LAPACK: /usr/lib/x86_64-linux-gnu/libopenblasp-r0.3.5.so
 
 locale:
- [1] LC_CTYPE=en_US.UTF-8       LC_NUMERIC=C               LC_TIME=en_US.UTF-8        LC_COLLATE=en_US.UTF-8    
- [5] LC_MONETARY=en_US.UTF-8    LC_MESSAGES=C              LC_PAPER=en_US.UTF-8       LC_NAME=C                 
- [9] LC_ADDRESS=C               LC_TELEPHONE=C             LC_MEASUREMENT=en_US.UTF-8 LC_IDENTIFICATION=C       
+[1] LC_COLLATE=English_United Kingdom.1252  LC_CTYPE=English_United Kingdom.1252   
+[3] LC_MONETARY=English_United Kingdom.1252 LC_NUMERIC=C                           
+[5] LC_TIME=English_United Kingdom.1252    
 
 attached base packages:
 [1] stats     graphics  grDevices utils     datasets  methods   base     
 
 other attached packages:
- [1] arsenal_3.3.0     lmtest_0.9-37     zoo_1.8-7         sandwich_2.5-1    downloader_0.4    forcats_0.4.0    
+ [1] arsenal_3.4.0     lmtest_0.9-37     zoo_1.8-7         sandwich_2.5-1    downloader_0.4    forcats_0.4.0    
  [7] stringr_1.4.0     dplyr_0.8.4       purrr_0.3.3       readr_1.3.1       tidyr_1.0.2       tibble_2.1.3     
 [13] ggplot2_3.2.1     tidyverse_1.3.0   victim_0.0.0.9000
 
 loaded via a namespace (and not attached):
- [1] httr_1.4.1         splines_3.6.2      jsonlite_1.6.1     carData_3.0-3      modelr_0.1.5      
- [6] assertthat_0.2.1   highr_0.8          cellranger_1.1.0   yaml_2.2.1         pillar_1.4.3      
-[11] backports_1.1.5    lattice_0.20-38    glue_1.3.1         digest_0.6.24      rvest_0.3.5       
-[16] colorspace_1.4-1   Matrix_1.2-18      htmltools_0.4.0    plyr_1.8.5         pkgconfig_2.0.3   
-[21] broom_0.5.4        haven_2.2.0        scales_1.1.0       openxlsx_4.1.4     rio_0.5.16        
-[26] generics_0.0.2     car_3.0-6          withr_2.1.2        lazyeval_0.2.2     cli_2.0.1         
-[31] survival_3.1-8     magrittr_1.5       crayon_1.3.4       readxl_1.3.1       evaluate_0.14     
-[36] fs_1.3.1           fansi_0.4.1        nlme_3.1-142       MASS_7.3-51.4      xml2_1.2.2        
-[41] foreign_0.8-72     class_7.3-15       tools_3.6.2        data.table_1.12.8  hms_0.5.3         
-[46] lifecycle_0.1.0    munsell_0.5.0      reprex_0.3.0       zip_2.0.4          compiler_3.6.2    
-[51] e1071_1.7-3        rlang_0.4.4        classInt_0.4-2     grid_3.6.2         rstudioapi_0.11   
-[56] rmarkdown_2.1      gtable_0.3.0       codetools_0.2-16   abind_1.4-5        DBI_1.1.0         
-[61] curl_4.3           reshape2_1.4.3     R6_2.4.1           lubridate_1.7.4    knitr_1.28        
-[66] utf8_1.1.4         KernSmooth_2.23-16 stringi_1.4.5      Rcpp_1.0.3         vctrs_0.2.2       
-[71] dbplyr_1.4.2       tidyselect_1.0.0   xfun_0.12         
+ [1] Rcpp_1.0.3         lubridate_1.7.4    lattice_0.20-38    class_7.3-15       assertthat_0.2.1   digest_0.6.23     
+ [7] R6_2.4.1           cellranger_1.1.0   plyr_1.8.5         backports_1.1.5    reprex_0.3.0       e1071_1.7-3       
+[13] evaluate_0.14      httr_1.4.1         pillar_1.4.3       rlang_0.4.4        lazyeval_0.2.2     curl_4.3          
+[19] readxl_1.3.1       rstudioapi_0.11    data.table_1.12.8  car_3.0-6          rmarkdown_2.1      foreign_0.8-72    
+[25] munsell_0.5.0      broom_0.5.4        compiler_3.6.2     modelr_0.1.5       xfun_0.12          pkgconfig_2.0.3   
+[31] htmltools_0.4.0    tidyselect_1.0.0   codetools_0.2-16   rio_0.5.16         fansi_0.4.1        crayon_1.3.4      
+[37] dbplyr_1.4.2       withr_2.1.2        grid_3.6.2         nlme_3.1-142       jsonlite_1.6.1     gtable_0.3.0      
+[43] lifecycle_0.1.0    DBI_1.1.0          magrittr_1.5       scales_1.1.0       KernSmooth_2.23-16 zip_2.0.4         
+[49] carData_3.0-3      cli_2.0.1          stringi_1.4.4      reshape2_1.4.3     fs_1.3.1           xml2_1.2.2        
+[55] generics_0.0.2     vctrs_0.2.2        openxlsx_4.1.4     tools_3.6.2        glue_1.3.1         hms_0.5.3         
+[61] yaml_2.2.1         abind_1.4-5        colorspace_1.4-1   classInt_0.4-2     rvest_0.3.5        knitr_1.28        
+[67] haven_2.2.0       
 ```
 
 ```r
@@ -140,41 +136,37 @@ sessionInfo()
 
 ```
 R version 3.6.2 (2019-12-12)
-Platform: x86_64-pc-linux-gnu (64-bit)
-Running under: Debian GNU/Linux 10 (buster)
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+Running under: Windows 10 x64 (build 18362)
 
 Matrix products: default
-BLAS/LAPACK: /usr/lib/x86_64-linux-gnu/libopenblasp-r0.3.5.so
 
 locale:
- [1] LC_CTYPE=en_US.UTF-8       LC_NUMERIC=C               LC_TIME=en_US.UTF-8        LC_COLLATE=en_US.UTF-8    
- [5] LC_MONETARY=en_US.UTF-8    LC_MESSAGES=C              LC_PAPER=en_US.UTF-8       LC_NAME=C                 
- [9] LC_ADDRESS=C               LC_TELEPHONE=C             LC_MEASUREMENT=en_US.UTF-8 LC_IDENTIFICATION=C       
+[1] LC_COLLATE=English_United Kingdom.1252  LC_CTYPE=English_United Kingdom.1252   
+[3] LC_MONETARY=English_United Kingdom.1252 LC_NUMERIC=C                           
+[5] LC_TIME=English_United Kingdom.1252    
 
 attached base packages:
 [1] stats     graphics  grDevices utils     datasets  methods   base     
 
 other attached packages:
- [1] arsenal_3.3.0     lmtest_0.9-37     zoo_1.8-7         sandwich_2.5-1    downloader_0.4    forcats_0.4.0    
+ [1] arsenal_3.4.0     lmtest_0.9-37     zoo_1.8-7         sandwich_2.5-1    downloader_0.4    forcats_0.4.0    
  [7] stringr_1.4.0     dplyr_0.8.4       purrr_0.3.3       readr_1.3.1       tidyr_1.0.2       tibble_2.1.3     
 [13] ggplot2_3.2.1     tidyverse_1.3.0   victim_0.0.0.9000
 
 loaded via a namespace (and not attached):
- [1] httr_1.4.1         splines_3.6.2      jsonlite_1.6.1     carData_3.0-3      modelr_0.1.5      
- [6] assertthat_0.2.1   highr_0.8          cellranger_1.1.0   yaml_2.2.1         pillar_1.4.3      
-[11] backports_1.1.5    lattice_0.20-38    glue_1.3.1         digest_0.6.24      rvest_0.3.5       
-[16] colorspace_1.4-1   Matrix_1.2-18      htmltools_0.4.0    plyr_1.8.5         pkgconfig_2.0.3   
-[21] broom_0.5.4        haven_2.2.0        scales_1.1.0       openxlsx_4.1.4     rio_0.5.16        
-[26] generics_0.0.2     car_3.0-6          withr_2.1.2        lazyeval_0.2.2     cli_2.0.1         
-[31] survival_3.1-8     magrittr_1.5       crayon_1.3.4       readxl_1.3.1       evaluate_0.14     
-[36] fs_1.3.1           fansi_0.4.1        nlme_3.1-142       MASS_7.3-51.4      xml2_1.2.2        
-[41] foreign_0.8-72     class_7.3-15       tools_3.6.2        data.table_1.12.8  hms_0.5.3         
-[46] lifecycle_0.1.0    munsell_0.5.0      reprex_0.3.0       zip_2.0.4          compiler_3.6.2    
-[51] e1071_1.7-3        rlang_0.4.4        classInt_0.4-2     grid_3.6.2         rstudioapi_0.11   
-[56] rmarkdown_2.1      gtable_0.3.0       codetools_0.2-16   abind_1.4-5        DBI_1.1.0         
-[61] curl_4.3           reshape2_1.4.3     R6_2.4.1           lubridate_1.7.4    knitr_1.28        
-[66] utf8_1.1.4         KernSmooth_2.23-16 stringi_1.4.5      Rcpp_1.0.3         vctrs_0.2.2       
-[71] dbplyr_1.4.2       tidyselect_1.0.0   xfun_0.12         
+ [1] Rcpp_1.0.3         lubridate_1.7.4    lattice_0.20-38    class_7.3-15       assertthat_0.2.1   digest_0.6.23     
+ [7] R6_2.4.1           cellranger_1.1.0   plyr_1.8.5         backports_1.1.5    reprex_0.3.0       e1071_1.7-3       
+[13] evaluate_0.14      httr_1.4.1         pillar_1.4.3       rlang_0.4.4        lazyeval_0.2.2     curl_4.3          
+[19] readxl_1.3.1       rstudioapi_0.11    data.table_1.12.8  car_3.0-6          rmarkdown_2.1      foreign_0.8-72    
+[25] munsell_0.5.0      broom_0.5.4        compiler_3.6.2     modelr_0.1.5       xfun_0.12          pkgconfig_2.0.3   
+[31] htmltools_0.4.0    tidyselect_1.0.0   codetools_0.2-16   rio_0.5.16         fansi_0.4.1        crayon_1.3.4      
+[37] dbplyr_1.4.2       withr_2.1.2        grid_3.6.2         nlme_3.1-142       jsonlite_1.6.1     gtable_0.3.0      
+[43] lifecycle_0.1.0    DBI_1.1.0          magrittr_1.5       scales_1.1.0       KernSmooth_2.23-16 zip_2.0.4         
+[49] carData_3.0-3      cli_2.0.1          stringi_1.4.4      reshape2_1.4.3     fs_1.3.1           xml2_1.2.2        
+[55] generics_0.0.2     vctrs_0.2.2        openxlsx_4.1.4     tools_3.6.2        glue_1.3.1         hms_0.5.3         
+[61] yaml_2.2.1         abind_1.4-5        colorspace_1.4-1   classInt_0.4-2     rvest_0.3.5        knitr_1.28        
+[67] haven_2.2.0       
 ```
 
 
@@ -297,26 +289,21 @@ We first load and arrange the area and victim level data
 
 ```r
 ### Change if not in testing settings
-#params <- list(test = TRUE)
+params <- list(test = TRUE)
 if(params$test){
     download("https://raw.githubusercontent.com/prestevez/datahouse/master/enve2014cuest_ciega_2014.dbf",
                       destfile = "enve2014cuest_ciega_2014.dbf", mode = "wb")
     download("https://raw.githubusercontent.com/prestevez/datahouse/master/enve2014delitos_ciega_2014.dbf",
                  destfile = "enve2014delitos_ciega_2014.dbf", mode = "wb")
 }
-```
 
-```
-Error in eval(expr, envir, enclos): object 'params' not found
-```
-
-```r
 list.files()
 ```
 
 ```
 [1] "BJC_compliance_revision2020.html" "BJC_compliance_revision2020.md"   "BJC_compliance_revision2020.Rmd" 
-[4] "cache"                            "enve2014cuest_ciega_2014.dbf"     "enve2014delitos_ciega_2014.dbf"  
+[4] "enve2014cuest_ciega_2014.dbf"     "enve2014delitos_ciega_2014.dbf"   "install_packages.R"              
+[7] "README.Rmd"                       "required_packages.R"             
 ```
 
 
@@ -364,10 +351,10 @@ table(enve_test$extortions)
 
 ```
 
-   0    1    2    3    4    5    6    7    8    9   10   11   12   13   14   15   19   20   21   22   23   25 
-2203  109   46   32   25   19    8    5    4    5    4    2    5    4    6    5    2    4    2    1    2    1 
-  27   29   32   33 
-   1    1    3    1 
+   0    1    2    3    4    5    6    7    8    9   10   11   12   13   14   15   19   20   21   22   23   25   27   29 
+2203  109   46   32   25   19    8    5    4    5    4    2    5    4    6    5    2    4    2    1    2    1    1    1 
+  32   33 
+   3    1 
 ```
 
 ```r
@@ -390,10 +377,10 @@ table(enve_test$rep_extortions)
 
 ```
 
-   0    1    2    3    4    5    6    7    8    9   10   11   12   13   14   18   19   20   21   22   24   26 
-2312   46   32   25   19    8    5    4    5    4    2    5    4    6    5    2    4    2    1    2    1    1 
-  28   31   32 
-   1    3    1 
+   0    1    2    3    4    5    6    7    8    9   10   11   12   13   14   18   19   20   21   22   24   26   28   31 
+2312   46   32   25   19    8    5    4    5    4    2    5    4    6    5    2    4    2    1    2    1    1    1    3 
+  32 
+   1 
 ```
 
 ```r
@@ -530,10 +517,10 @@ summary(enve_test$subsector)
 ```
 
 ```
-        Retail      Corporate  HotelsRestBar  Manufacturing Other industry    Other serv.      Transport 
-            82             50            367            484            386            843            135 
-     Utilities      Wholesale 
-            38            115 
+        Retail      Corporate  HotelsRestBar  Manufacturing Other industry    Other serv.      Transport      Utilities 
+            82             50            367            484            386            843            135             38 
+     Wholesale 
+           115 
 ```
 
 ```r
@@ -581,65 +568,57 @@ summary(enve_test)
  1st Qu.: 9.00   1st Qu.: 0.0000   2:2153           1st Qu.:0.0000       1st Qu.: 0.0000   1st Qu.: 10220  
  Median :16.00   Median : 0.0000   9:  50           Median :0.0000       Median : 0.0000   Median : 19849  
  Mean   :16.56   Mean   : 0.5692                    Mean   :0.0752       Mean   : 0.4504   Mean   : 32087  
- 3rd Qu.:24.00   3rd Qu.: 0.0000                    3rd Qu.:0.0000       3rd Qu.: 0.0000   3rd Qu.: 53126  
+ 3rd Qu.:24.00   3rd Qu.: 0.0000                    3rd Qu.:0.0000       3rd Qu.: 0.0000   3rd Qu.: 53127  
  Max.   :32.00   Max.   :33.0000                    Max.   :1.0000       Max.   :32.0000   Max.   :100000  
                                                                                                            
-     bribes        bribe1   bribe2   bribe3   bribe4    bribe_victim      rep_bribe      bribe_cats
- Min.   : 0.0000   1: 282   1: 282   1: 282   1: 282   Min.   :0.0000   Min.   :0.0000   0 :2218   
- 1st Qu.: 0.0000   2:2168   2:2168   2:2168   2:2168   1st Qu.:0.0000   1st Qu.:0.0000   1 : 135   
- Median : 0.0000   9:  50   9:  50   9:  50   9:  50   Median :0.0000   Median :0.0000   2 :  54   
- Mean   : 0.2804                                       Mean   :0.1128   Mean   :0.0588   3+:  93   
- 3rd Qu.: 0.0000                                       3rd Qu.:0.0000   3rd Qu.:0.0000             
- Max.   :16.0000                                       Max.   :1.0000   Max.   :1.0000             
-                                                                                                   
-     size     sector     tempsub                subsector         subsector_safe     years         yearsquant 
- Large :589   C:809   Min.   :212410   Other serv.   :843   Manufacturing:484    Min.   : 0.00   [0,8]  :552  
- Medium:633   I:825   1st Qu.:361710   Manufacturing :484   Health       :391    1st Qu.:10.00   (8,16] :454  
- Small :618   S:866   Median :511160   Other industry:386   HotelsRestBar:367    Median :21.00   (16,25]:507  
- Micro :660           Mean   :511102   HotelsRestBar :367   Construction :356    Mean   :20.94   (25,34]:525  
-                      3rd Qu.:658810   Transport     :135   Maintenance  :206    3rd Qu.:31.00   (34,43]:462  
-                      Max.   :812910   Wholesale     :115   Transport    :135    Max.   :43.00                
-                                       (Other)       :170   (Other)      :561                                 
-       X               N        denuncias_homs     poblacion           tasahom       bribes_preval  
- Min.   : 1.00   Min.   : 534   Min.   :  39.0   Min.   :  698295   Min.   : 1.938   Min.   :16.93  
- 1st Qu.: 9.00   1st Qu.: 745   1st Qu.: 151.0   1st Qu.: 1728429   1st Qu.: 7.611   1st Qu.:32.06  
- Median :16.00   Median : 838   Median : 536.0   Median : 2890108   Median :11.806   Median :42.25  
- Mean   :16.56   Mean   : 875   Mean   : 581.6   Mean   : 3811708   Mean   :15.974   Mean   :46.32  
- 3rd Qu.:24.00   3rd Qu.: 961   3rd Qu.: 755.5   3rd Qu.: 4941059   3rd Qu.:20.165   3rd Qu.:56.95  
- Max.   :32.00   Max.   :1657   Max.   :2087.0   Max.   :16364210   Max.   :59.225   Max.   :94.14  
-                                                                                                    
-  bribes_inci      bribes_conc     bribes_abvic   bribes_abincs     Incidence        Prevalence    
- Min.   : 31.42   Min.   :1.318   Min.   : 14.0   Min.   : 26.0   Min.   : 45.67   Min.   : 23.85  
- 1st Qu.: 72.48   1st Qu.:1.693   1st Qu.: 27.0   1st Qu.: 54.0   1st Qu.: 78.41   1st Qu.: 56.50  
- Median : 89.49   Median :1.895   Median : 34.0   Median : 82.0   Median :116.80   Median : 67.17  
- Mean   :111.30   Mean   :2.345   Mean   : 39.9   Mean   : 94.9   Mean   :131.86   Mean   : 80.30  
- 3rd Qu.:125.46   3rd Qu.:2.485   3rd Qu.: 53.0   3rd Qu.:108.0   3rd Qu.:172.60   3rd Qu.: 99.25  
- Max.   :420.16   Max.   :5.797   Max.   :101.0   Max.   :371.0   Max.   :290.12   Max.   :190.69  
-                                                                                                   
- Concentration       defun          defun_arma      ind_general     ind_derecho       Derecho     
- Min.   :1.163   Min.   :  46.0   Min.   :   8.0   Min.   :25.26   Min.   :21.37   Min.   :21.37  
- 1st Qu.:1.340   1st Qu.: 214.0   1st Qu.: 111.0   1st Qu.:42.55   1st Qu.:50.09   1st Qu.:50.09  
- Median :1.606   Median : 638.0   Median : 380.0   Median :49.02   Median :55.53   Median :55.53  
- Mean   :1.658   Mean   : 718.6   Mean   : 449.1   Mean   :47.81   Mean   :54.42   Mean   :54.42  
- 3rd Qu.:1.820   3rd Qu.: 832.0   3rd Qu.: 526.0   3rd Qu.:52.67   3rd Qu.:62.15   3rd Qu.:62.15  
- Max.   :2.709   Max.   :3265.0   Max.   :2049.0   Max.   :67.85   Max.   :78.40   Max.   :78.40  
-                                                                                                  
-    General                  ENTIDAD          AÑO           drogas             do             armas       
- Min.   :25.26   HIDALGO         : 100   Min.   :2013   Min.   :  37.0   Min.   :  0.00   Min.   :  31.0  
- 1st Qu.:42.55   GUANAJUATO      :  95   1st Qu.:2013   1st Qu.: 108.0   1st Qu.: 15.00   1st Qu.: 240.0  
- Median :49.02   JALISCO         :  95   Median :2013   Median : 187.0   Median : 28.00   Median : 455.0  
- Mean   :47.81   NUEVO LEON      :  87   Mean   :2013   Mean   : 548.9   Mean   : 39.64   Mean   : 575.1  
- 3rd Qu.:52.67   CIUDAD DE MEXICO:  85   3rd Qu.:2013   3rd Qu.: 591.0   3rd Qu.: 53.00   3rd Qu.: 874.0  
- Max.   :67.85   PUEBLA          :  84   Max.   :2013   Max.   :3738.0   Max.   :174.00   Max.   :1632.0  
-                 (Other)         :1954                                                                    
- ab_ext_preval      ab_ext_inc                NOM_ENT        NOM_ABR    
- Min.   : 19.00   Min.   : 29.0   HIDALGO         : 100   HGO.   : 100  
- 1st Qu.: 45.00   1st Qu.: 63.0   GUANAJUATO      :  95   GTO.   :  95  
- Median : 59.00   Median :103.0   JALISCO         :  95   JAL.   :  95  
- Mean   : 69.97   Mean   :115.7   NUEVO LEON      :  87   NL     :  87  
- 3rd Qu.: 83.00   3rd Qu.:144.0   DISTRITO FEDERAL:  85   DF     :  85  
- Max.   :180.00   Max.   :286.0   PUEBLA          :  84   PUE.   :  84  
-                                  (Other)         :1954   (Other):1954  
+     bribes        bribe1   bribe2   bribe3   bribe4    bribe_victim      rep_bribe      bribe_cats     size     sector 
+ Min.   : 0.0000   1: 282   1: 282   1: 282   1: 282   Min.   :0.0000   Min.   :0.0000   0 :2218    Large :589   C:809  
+ 1st Qu.: 0.0000   2:2168   2:2168   2:2168   2:2168   1st Qu.:0.0000   1st Qu.:0.0000   1 : 135    Medium:633   I:825  
+ Median : 0.0000   9:  50   9:  50   9:  50   9:  50   Median :0.0000   Median :0.0000   2 :  54    Small :618   S:866  
+ Mean   : 0.2804                                       Mean   :0.1128   Mean   :0.0588   3+:  93    Micro :660          
+ 3rd Qu.: 0.0000                                       3rd Qu.:0.0000   3rd Qu.:0.0000                                  
+ Max.   :16.0000                                       Max.   :1.0000   Max.   :1.0000                                  
+                                                                                                                        
+    tempsub                subsector         subsector_safe     years         yearsquant        X               N       
+ Min.   :212410   Other serv.   :843   Manufacturing:484    Min.   : 0.00   [0,8]  :552   Min.   : 1.00   Min.   : 534  
+ 1st Qu.:361710   Manufacturing :484   Health       :391    1st Qu.:10.00   (8,16] :454   1st Qu.: 9.00   1st Qu.: 745  
+ Median :511160   Other industry:386   HotelsRestBar:367    Median :21.00   (16,25]:507   Median :16.00   Median : 838  
+ Mean   :511102   HotelsRestBar :367   Construction :356    Mean   :20.94   (25,34]:525   Mean   :16.56   Mean   : 875  
+ 3rd Qu.:658810   Transport     :135   Maintenance  :206    3rd Qu.:31.00   (34,43]:462   3rd Qu.:24.00   3rd Qu.: 961  
+ Max.   :812910   Wholesale     :115   Transport    :135    Max.   :43.00                 Max.   :32.00   Max.   :1657  
+                  (Other)       :170   (Other)      :561                                                                
+ denuncias_homs     poblacion           tasahom       bribes_preval    bribes_inci      bribes_conc     bribes_abvic  
+ Min.   :  39.0   Min.   :  698295   Min.   : 1.938   Min.   :16.93   Min.   : 31.42   Min.   :1.318   Min.   : 14.0  
+ 1st Qu.: 151.0   1st Qu.: 1728429   1st Qu.: 7.611   1st Qu.:32.06   1st Qu.: 72.48   1st Qu.:1.693   1st Qu.: 27.0  
+ Median : 536.0   Median : 2890108   Median :11.806   Median :42.25   Median : 89.49   Median :1.895   Median : 34.0  
+ Mean   : 581.6   Mean   : 3811708   Mean   :15.974   Mean   :46.32   Mean   :111.30   Mean   :2.345   Mean   : 39.9  
+ 3rd Qu.: 755.5   3rd Qu.: 4941059   3rd Qu.:20.165   3rd Qu.:56.95   3rd Qu.:125.46   3rd Qu.:2.485   3rd Qu.: 53.0  
+ Max.   :2087.0   Max.   :16364210   Max.   :59.225   Max.   :94.14   Max.   :420.16   Max.   :5.797   Max.   :101.0  
+                                                                                                                      
+ bribes_abincs     Incidence        Prevalence     Concentration       defun          defun_arma      ind_general   
+ Min.   : 26.0   Min.   : 45.67   Min.   : 23.85   Min.   :1.163   Min.   :  46.0   Min.   :   8.0   Min.   :25.26  
+ 1st Qu.: 54.0   1st Qu.: 78.41   1st Qu.: 56.50   1st Qu.:1.340   1st Qu.: 214.0   1st Qu.: 111.0   1st Qu.:42.55  
+ Median : 82.0   Median :116.80   Median : 67.17   Median :1.606   Median : 638.0   Median : 380.0   Median :49.02  
+ Mean   : 94.9   Mean   :131.86   Mean   : 80.30   Mean   :1.658   Mean   : 718.6   Mean   : 449.1   Mean   :47.81  
+ 3rd Qu.:108.0   3rd Qu.:172.60   3rd Qu.: 99.25   3rd Qu.:1.820   3rd Qu.: 832.0   3rd Qu.: 526.0   3rd Qu.:52.67  
+ Max.   :371.0   Max.   :290.12   Max.   :190.69   Max.   :2.709   Max.   :3265.0   Max.   :2049.0   Max.   :67.85  
+                                                                                                                    
+  ind_derecho       Derecho         General                  ENTIDAD          AÃ.O          drogas      
+ Min.   :21.37   Min.   :21.37   Min.   :25.26   HIDALGO         : 100   Min.   :2013   Min.   :  37.0  
+ 1st Qu.:50.09   1st Qu.:50.09   1st Qu.:42.55   GUANAJUATO      :  95   1st Qu.:2013   1st Qu.: 108.0  
+ Median :55.53   Median :55.53   Median :49.02   JALISCO         :  95   Median :2013   Median : 187.0  
+ Mean   :54.42   Mean   :54.42   Mean   :47.81   NUEVO LEON      :  87   Mean   :2013   Mean   : 548.9  
+ 3rd Qu.:62.15   3rd Qu.:62.15   3rd Qu.:52.67   CIUDAD DE MEXICO:  85   3rd Qu.:2013   3rd Qu.: 591.0  
+ Max.   :78.40   Max.   :78.40   Max.   :67.85   PUEBLA          :  84   Max.   :2013   Max.   :3738.0  
+                                                 (Other)         :1954                                  
+       do             armas        ab_ext_preval      ab_ext_inc                NOM_ENT        NOM_ABR    
+ Min.   :  0.00   Min.   :  31.0   Min.   : 19.00   Min.   : 29.0   HIDALGO         : 100   HGO.   : 100  
+ 1st Qu.: 15.00   1st Qu.: 240.0   1st Qu.: 45.00   1st Qu.: 63.0   GUANAJUATO      :  95   GTO.   :  95  
+ Median : 28.00   Median : 455.0   Median : 59.00   Median :103.0   JALISCO         :  95   JAL.   :  95  
+ Mean   : 39.64   Mean   : 575.1   Mean   : 69.97   Mean   :115.7   NUEVO LEON      :  87   NL     :  87  
+ 3rd Qu.: 53.00   3rd Qu.: 874.0   3rd Qu.: 83.00   3rd Qu.:144.0   DISTRITO FEDERAL:  85   DF     :  85  
+ Max.   :174.00   Max.   :1632.0   Max.   :180.00   Max.   :286.0   PUEBLA          :  84   PUE.   :  84  
+                                                                    (Other)         :1954   (Other):1954  
 ```
 
 ```r
@@ -708,62 +687,54 @@ summary(enve_test)
  3rd Qu.:24.00   3rd Qu.: 0.0000                    3rd Qu.:0.00000      3rd Qu.: 0.0000   3rd Qu.: 53297  
  Max.   :32.00   Max.   :33.0000                    Max.   :1.00000      Max.   :32.0000   Max.   :100000  
                                                                                                            
-     bribes        bribe1   bribe2   bribe3   bribe4    bribe_victim      rep_bribe       bribe_cats
- Min.   : 0.0000   1: 274   1: 274   1: 274   1: 274   Min.   :0.0000   Min.   :0.00000   0 :2138   
- 1st Qu.: 0.0000   2:2090   2:2090   2:2090   2:2090   1st Qu.:0.0000   1st Qu.:0.00000   1 : 131   
- Median : 0.0000   9:  48   9:  48   9:  48   9:  48   Median :0.0000   Median :0.00000   2 :  54   
- Mean   : 0.2786                                       Mean   :0.1136   Mean   :0.05929   3+:  89   
- 3rd Qu.: 0.0000                                       3rd Qu.:0.0000   3rd Qu.:0.00000             
- Max.   :13.0000                                       Max.   :1.0000   Max.   :1.00000             
-                                                                                                    
-     size     sector     tempsub                subsector         subsector_safe     years        yearsquant 
- Large :568   C:776   Min.   :212410   Retail        : 82   Manufacturing:484    Min.   : 0.0   [0,8]  :539  
- Medium:611   I:792   1st Qu.:365310   HotelsRestBar :367   Health       :391    1st Qu.:10.0   (8,16] :433  
- Small :597   S:844   Median :510610   Manufacturing :484   HotelsRestBar:367    Median :21.0   (16,25]:487  
- Micro :636           Mean   :514704   Other industry:386   Construction :356    Mean   :20.9   (25,34]:510  
-                      3rd Qu.:665310   Other serv.   :843   Maintenance  :206    3rd Qu.:31.0   (34,43]:443  
-                      Max.   :812910   Transport     :135   Transport    :135    Max.   :43.0                
-                                       Wholesale     :115   (Other)      :473                                
-       X               N        denuncias_homs     poblacion           tasahom       bribes_preval  
- Min.   : 1.00   Min.   : 534   Min.   :  39.0   Min.   :  698295   Min.   : 1.938   Min.   :16.93  
- 1st Qu.: 9.00   1st Qu.: 721   1st Qu.: 151.0   1st Qu.: 1728429   1st Qu.: 7.797   1st Qu.:32.06  
- Median :16.00   Median : 838   Median : 536.0   Median : 2890108   Median :11.806   Median :42.25  
- Mean   :16.47   Mean   : 873   Mean   : 583.3   Mean   : 3812229   Mean   :16.031   Mean   :46.27  
- 3rd Qu.:24.00   3rd Qu.: 961   3rd Qu.: 775.0   3rd Qu.: 4941059   3rd Qu.:20.165   3rd Qu.:56.95  
- Max.   :32.00   Max.   :1657   Max.   :2087.0   Max.   :16364210   Max.   :59.225   Max.   :94.14  
-                                                                                                    
-  bribes_inci      bribes_conc     bribes_abvic    bribes_abincs      Incidence        Prevalence    
- Min.   : 31.42   Min.   :1.318   Min.   : 14.00   Min.   : 26.00   Min.   : 45.67   Min.   : 23.85  
- 1st Qu.: 72.48   1st Qu.:1.693   1st Qu.: 27.00   1st Qu.: 48.00   1st Qu.: 83.42   1st Qu.: 56.50  
- Median : 89.49   Median :1.895   Median : 34.00   Median : 74.00   Median :116.80   Median : 67.17  
- Mean   :111.18   Mean   :2.342   Mean   : 39.75   Mean   : 94.57   Mean   :131.88   Mean   : 80.34  
- 3rd Qu.:125.46   3rd Qu.:2.485   3rd Qu.: 53.00   3rd Qu.:108.00   3rd Qu.:172.60   3rd Qu.: 99.25  
- Max.   :420.16   Max.   :5.797   Max.   :101.00   Max.   :371.00   Max.   :290.12   Max.   :190.69  
-                                                                                                     
- Concentration       defun          defun_arma      ind_general     ind_derecho       Derecho     
- Min.   :1.163   Min.   :  46.0   Min.   :   8.0   Min.   :25.26   Min.   :21.37   Min.   :21.37  
- 1st Qu.:1.340   1st Qu.: 214.0   1st Qu.: 111.0   1st Qu.:42.55   1st Qu.:50.09   1st Qu.:50.09  
- Median :1.606   Median : 638.0   Median : 380.0   Median :49.02   Median :55.53   Median :55.53  
- Mean   :1.658   Mean   : 721.4   Mean   : 451.1   Mean   :47.83   Mean   :54.38   Mean   :54.38  
- 3rd Qu.:1.820   3rd Qu.: 832.0   3rd Qu.: 526.0   3rd Qu.:52.67   3rd Qu.:62.15   3rd Qu.:62.15  
- Max.   :2.709   Max.   :3265.0   Max.   :2049.0   Max.   :67.85   Max.   :78.40   Max.   :78.40  
-                                                                                                  
-    General                  ENTIDAD          AÑO           drogas             do             armas       
- Min.   :25.26   HIDALGO         :  98   Min.   :2013   Min.   :  37.0   Min.   :  0.00   Min.   :  31.0  
- 1st Qu.:42.55   GUANAJUATO      :  93   1st Qu.:2013   1st Qu.: 108.0   1st Qu.: 15.00   1st Qu.: 240.0  
- Median :49.02   JALISCO         :  93   Median :2013   Median : 187.0   Median : 28.00   Median : 455.0  
- Mean   :47.83   CIUDAD DE MEXICO:  82   Mean   :2013   Mean   : 550.9   Mean   : 39.69   Mean   : 575.8  
- 3rd Qu.:52.67   NUEVO LEON      :  82   3rd Qu.:2013   3rd Qu.: 591.0   3rd Qu.: 53.00   3rd Qu.: 874.0  
- Max.   :67.85   COAHUILA        :  80   Max.   :2013   Max.   :3738.0   Max.   :174.00   Max.   :1632.0  
-                 (Other)         :1884                                                                    
- ab_ext_preval      ab_ext_inc                    NOM_ENT        NOM_ABR    
- Min.   : 19.00   Min.   : 29.0   HIDALGO             :  98   HGO.   :  98  
- 1st Qu.: 45.00   1st Qu.: 63.0   GUANAJUATO          :  93   GTO.   :  93  
- Median : 59.00   Median :103.0   JALISCO             :  93   JAL.   :  93  
- Mean   : 69.83   Mean   :115.4   DISTRITO FEDERAL    :  82   DF     :  82  
- 3rd Qu.: 83.00   3rd Qu.:144.0   NUEVO LEON          :  82   NL     :  82  
- Max.   :180.00   Max.   :286.0   COAHUILA DE ZARAGOZA:  80   COAH.  :  80  
-                                  (Other)             :1884   (Other):1884  
+     bribes        bribe1   bribe2   bribe3   bribe4    bribe_victim      rep_bribe       bribe_cats     size    
+ Min.   : 0.0000   1: 274   1: 274   1: 274   1: 274   Min.   :0.0000   Min.   :0.00000   0 :2138    Large :568  
+ 1st Qu.: 0.0000   2:2090   2:2090   2:2090   2:2090   1st Qu.:0.0000   1st Qu.:0.00000   1 : 131    Medium:611  
+ Median : 0.0000   9:  48   9:  48   9:  48   9:  48   Median :0.0000   Median :0.00000   2 :  54    Small :597  
+ Mean   : 0.2786                                       Mean   :0.1136   Mean   :0.05929   3+:  89    Micro :636  
+ 3rd Qu.: 0.0000                                       3rd Qu.:0.0000   3rd Qu.:0.00000                          
+ Max.   :13.0000                                       Max.   :1.0000   Max.   :1.00000                          
+                                                                                                                 
+ sector     tempsub                subsector         subsector_safe     years        yearsquant        X        
+ C:776   Min.   :212410   Retail        : 82   Manufacturing:484    Min.   : 0.0   [0,8]  :539   Min.   : 1.00  
+ I:792   1st Qu.:365310   HotelsRestBar :367   Health       :391    1st Qu.:10.0   (8,16] :433   1st Qu.: 9.00  
+ S:844   Median :510610   Manufacturing :484   HotelsRestBar:367    Median :21.0   (16,25]:487   Median :16.00  
+         Mean   :514704   Other industry:386   Construction :356    Mean   :20.9   (25,34]:510   Mean   :16.47  
+         3rd Qu.:665310   Other serv.   :843   Maintenance  :206    3rd Qu.:31.0   (34,43]:443   3rd Qu.:24.00  
+         Max.   :812910   Transport     :135   Transport    :135    Max.   :43.0                 Max.   :32.00  
+                          Wholesale     :115   (Other)      :473                                                
+       N        denuncias_homs     poblacion           tasahom       bribes_preval    bribes_inci      bribes_conc   
+ Min.   : 534   Min.   :  39.0   Min.   :  698295   Min.   : 1.938   Min.   :16.93   Min.   : 31.42   Min.   :1.318  
+ 1st Qu.: 721   1st Qu.: 151.0   1st Qu.: 1728429   1st Qu.: 7.797   1st Qu.:32.06   1st Qu.: 72.48   1st Qu.:1.693  
+ Median : 838   Median : 536.0   Median : 2890108   Median :11.806   Median :42.25   Median : 89.49   Median :1.895  
+ Mean   : 873   Mean   : 583.3   Mean   : 3812229   Mean   :16.031   Mean   :46.27   Mean   :111.18   Mean   :2.342  
+ 3rd Qu.: 961   3rd Qu.: 775.0   3rd Qu.: 4941059   3rd Qu.:20.165   3rd Qu.:56.95   3rd Qu.:125.46   3rd Qu.:2.485  
+ Max.   :1657   Max.   :2087.0   Max.   :16364210   Max.   :59.225   Max.   :94.14   Max.   :420.16   Max.   :5.797  
+                                                                                                                     
+  bribes_abvic    bribes_abincs      Incidence        Prevalence     Concentration       defun          defun_arma    
+ Min.   : 14.00   Min.   : 26.00   Min.   : 45.67   Min.   : 23.85   Min.   :1.163   Min.   :  46.0   Min.   :   8.0  
+ 1st Qu.: 27.00   1st Qu.: 48.00   1st Qu.: 83.42   1st Qu.: 56.50   1st Qu.:1.340   1st Qu.: 214.0   1st Qu.: 111.0  
+ Median : 34.00   Median : 74.00   Median :116.80   Median : 67.17   Median :1.606   Median : 638.0   Median : 380.0  
+ Mean   : 39.75   Mean   : 94.57   Mean   :131.88   Mean   : 80.34   Mean   :1.658   Mean   : 721.4   Mean   : 451.1  
+ 3rd Qu.: 53.00   3rd Qu.:108.00   3rd Qu.:172.60   3rd Qu.: 99.25   3rd Qu.:1.820   3rd Qu.: 832.0   3rd Qu.: 526.0  
+ Max.   :101.00   Max.   :371.00   Max.   :290.12   Max.   :190.69   Max.   :2.709   Max.   :3265.0   Max.   :2049.0  
+                                                                                                                      
+  ind_general     ind_derecho       Derecho         General                  ENTIDAD          AÃ.O          drogas      
+ Min.   :25.26   Min.   :21.37   Min.   :21.37   Min.   :25.26   HIDALGO         :  98   Min.   :2013   Min.   :  37.0  
+ 1st Qu.:42.55   1st Qu.:50.09   1st Qu.:50.09   1st Qu.:42.55   GUANAJUATO      :  93   1st Qu.:2013   1st Qu.: 108.0  
+ Median :49.02   Median :55.53   Median :55.53   Median :49.02   JALISCO         :  93   Median :2013   Median : 187.0  
+ Mean   :47.83   Mean   :54.38   Mean   :54.38   Mean   :47.83   CIUDAD DE MEXICO:  82   Mean   :2013   Mean   : 550.9  
+ 3rd Qu.:52.67   3rd Qu.:62.15   3rd Qu.:62.15   3rd Qu.:52.67   NUEVO LEON      :  82   3rd Qu.:2013   3rd Qu.: 591.0  
+ Max.   :67.85   Max.   :78.40   Max.   :78.40   Max.   :67.85   COAHUILA        :  80   Max.   :2013   Max.   :3738.0  
+                                                                 (Other)         :1884                                  
+       do             armas        ab_ext_preval      ab_ext_inc                    NOM_ENT        NOM_ABR    
+ Min.   :  0.00   Min.   :  31.0   Min.   : 19.00   Min.   : 29.0   HIDALGO             :  98   HGO.   :  98  
+ 1st Qu.: 15.00   1st Qu.: 240.0   1st Qu.: 45.00   1st Qu.: 63.0   GUANAJUATO          :  93   GTO.   :  93  
+ Median : 28.00   Median : 455.0   Median : 59.00   Median :103.0   JALISCO             :  93   JAL.   :  93  
+ Mean   : 39.69   Mean   : 575.8   Mean   : 69.83   Mean   :115.4   DISTRITO FEDERAL    :  82   DF     :  82  
+ 3rd Qu.: 53.00   3rd Qu.: 874.0   3rd Qu.: 83.00   3rd Qu.:144.0   NUEVO LEON          :  82   NL     :  82  
+ Max.   :174.00   Max.   :1632.0   Max.   :180.00   Max.   :286.0   COAHUILA DE ZARAGOZA:  80   COAH.  :  80  
+                                                                    (Other)             :1884   (Other):1884  
 ```
 
 Next we load incident-level data:
@@ -1031,7 +1002,7 @@ summary(incident_df)
  1st Qu.: 7168   1st Qu.: 4.00   1st Qu.:10   2      : 728   2    : 728     2    : 728      DK/DA:3233    
  Median :11759   Median : 7.00   Median :10   DK/DA  : 194   3    : 147     3    : 147                    
  Mean   :11948   Mean   :10.34   Mean   :10   3      : 147   4+   :  76     4    :  30                    
- 3rd Qu.:17414   3rd Qu.:11.00   3rd Qu.:10   4      :  30   DK/DA:3233     5    :  23                    
+ 3rd Qu.:17415   3rd Qu.:11.00   3rd Qu.:10   4      :  30   DK/DA:3233     5    :  23                    
  Max.   :23385   Max.   :99.00   Max.   :10   (Other):  46                  6    :  23                    
                                               NA's   :3039                  DK/DA:3233                    
  n_offenders_num          rel_offenders        rel_offenders_NA had_weapon   had_weapon_NA       extortion_type
@@ -1087,7 +1058,16 @@ nonacols <- names(enve_incvic)[!(names(enve_incvic) %in% nacols)]
 
 enve_incvic %>%
     select(nonacols) -> enve_nona
+```
 
+```
+Note: Using an external vector in selections is ambiguous.
+i Use `all_of(nonacols)` instead of `nonacols` to silence this message.
+i See <https://tidyselect.r-lib.org/reference/faq-external-vector.html>.
+This message is displayed once per session.
+```
+
+```r
 summary(enve_nona)
 ```
 
@@ -1100,78 +1080,70 @@ summary(enve_nona)
  3rd Qu.:17592   3rd Qu.:11.00   3rd Qu.:10   DK/DA:763      5    :  9                      3rd Qu.: 0.0000  
  Max.   :23355   Max.   :99.00   Max.   :10                  6    :  5                      Max.   : 5.0000  
                                                              DK/DA:763                                       
-       rel_offenders_NA had_weapon_NA       extortion_type extortion_type_bin extortion_type_wocp
- Total stranger:724     No   : 352    Remote       :1437   Remote   :1437     Remote   :1437     
- Known         : 31     Yes  :  36    Street       :  62   In person:  85     In person:  78     
- DK/DA         :767     DK/DA:1134    Premises     :  16                      Other    :   7     
-                                      Cobro de piso:   7                                         
-                                                                                                 
-                                                                                                 
-                                                                                                 
- complied_bin_NA    CVE_ENT        extortions      extortion_victim rep_extortion_victim rep_extortions   
- No :1434        Min.   : 1.00   Min.   : 0.0000   1: 170           Min.   :0.00000      Min.   : 0.0000  
- Yes:  88        1st Qu.: 9.00   1st Qu.: 0.0000   2:1326           1st Qu.:0.00000      1st Qu.: 0.0000  
-                 Median :16.00   Median : 0.0000   9:  26           Median :0.00000      Median : 0.0000  
-                 Mean   :16.35   Mean   : 0.5986                    Mean   :0.06636      Mean   : 0.4869  
-                 3rd Qu.:24.00   3rd Qu.: 0.0000                    3rd Qu.:0.00000      3rd Qu.: 0.0000  
-                 Max.   :32.00   Max.   :33.0000                    Max.   :1.00000      Max.   :32.0000  
-                                                                                                          
-     bribes        bribe1   bribe2   bribe3   bribe4    bribe_victim      rep_bribe       bribe_cats
- Min.   : 0.0000   1: 181   1: 181   1: 181   1: 181   Min.   :0.0000   Min.   :0.00000   0 :1341   
- 1st Qu.: 0.0000   2:1310   2:1310   2:1310   2:1310   1st Qu.:0.0000   1st Qu.:0.00000   1 :  84   
- Median : 0.0000   9:  31   9:  31   9:  31   9:  31   Median :0.0000   Median :0.00000   2 :  30   
- Mean   : 0.3154                                       Mean   :0.1189   Mean   :0.06373   3+:  67   
- 3rd Qu.: 0.0000                                       3rd Qu.:0.0000   3rd Qu.:0.00000             
- Max.   :13.0000                                       Max.   :1.0000   Max.   :1.00000             
-                                                                                                    
-     size     sector     tempsub                subsector         subsector_safe     years         yearsquant 
- Large :373   C:491   Min.   :212410   Retail        : 45   Manufacturing:336    Min.   : 0.00   [0,8]  :359  
- Medium:369   I:478   1st Qu.:369135   HotelsRestBar :233   Health       :265    1st Qu.: 9.00   (8,16] :296  
- Small :353   S:553   Median :517110   Manufacturing :336   HotelsRestBar:233    Median :20.00   (16,25]:297  
- Micro :427           Mean   :518096   Other industry:219   Construction :198    Mean   :20.31   (25,34]:306  
-                      3rd Qu.:671810   Other serv.   :547   Maintenance  :126    3rd Qu.:31.00   (34,43]:264  
-                      Max.   :812910   Transport     : 80   Transport    : 80    Max.   :43.00                
-                                       Wholesale     : 62   (Other)      :284                                 
-       X               N          denuncias_homs     poblacion           tasahom       bribes_preval  
- Min.   : 1.00   Min.   : 534.0   Min.   :  39.0   Min.   :  698295   Min.   : 1.938   Min.   :16.93  
- 1st Qu.: 9.00   1st Qu.: 745.0   1st Qu.: 151.0   1st Qu.: 1874188   1st Qu.: 7.797   1st Qu.:31.50  
- Median :16.00   Median : 838.0   Median : 536.0   Median : 2932313   Median :12.814   Median :42.20  
- Mean   :16.35   Mean   : 876.9   Mean   : 598.5   Mean   : 3964424   Mean   :15.903   Mean   :45.69  
- 3rd Qu.:24.00   3rd Qu.: 961.0   3rd Qu.: 775.0   3rd Qu.: 4941059   3rd Qu.:20.165   3rd Qu.:56.95  
- Max.   :32.00   Max.   :1657.0   Max.   :2087.0   Max.   :16364210   Max.   :59.225   Max.   :94.14  
-                                                                                                      
-  bribes_inci      bribes_conc     bribes_abvic    bribes_abincs     Incidence        Prevalence    
- Min.   : 31.42   Min.   :1.318   Min.   : 14.00   Min.   : 26.0   Min.   : 45.67   Min.   : 23.85  
- 1st Qu.: 64.99   1st Qu.:1.693   1st Qu.: 27.00   1st Qu.: 48.0   1st Qu.: 83.42   1st Qu.: 56.50  
- Median : 88.77   Median :1.882   Median : 34.00   Median : 74.0   Median :116.80   Median : 67.17  
- Mean   :106.72   Mean   :2.287   Mean   : 39.34   Mean   : 90.9   Mean   :131.75   Mean   : 80.67  
- 3rd Qu.:125.46   3rd Qu.:2.263   3rd Qu.: 53.00   3rd Qu.:108.0   3rd Qu.:172.60   3rd Qu.: 99.25  
- Max.   :420.16   Max.   :5.797   Max.   :101.00   Max.   :371.0   Max.   :290.12   Max.   :190.69  
-                                                                                                    
- Concentration       defun        defun_arma      ind_general     ind_derecho       Derecho     
- Min.   :1.163   Min.   :  46   Min.   :   8.0   Min.   :25.26   Min.   :21.37   Min.   :21.37  
- 1st Qu.:1.340   1st Qu.: 214   1st Qu.: 111.0   1st Qu.:42.55   1st Qu.:49.83   1st Qu.:49.83  
- Median :1.589   Median : 648   Median : 402.0   Median :49.02   Median :55.50   Median :55.50  
- Mean   :1.643   Mean   : 755   Mean   : 470.7   Mean   :47.90   Mean   :54.12   Mean   :54.12  
- 3rd Qu.:1.820   3rd Qu.: 832   3rd Qu.: 526.0   3rd Qu.:53.60   3rd Qu.:62.15   3rd Qu.:62.15  
- Max.   :2.709   Max.   :3265   Max.   :2049.0   Max.   :67.85   Max.   :78.40   Max.   :78.40  
-                                                                                                
-    General            ENTIDAD          AÑO           drogas             do             armas       
- Min.   :25.26   JALISCO   :  74   Min.   :2013   Min.   :  37.0   Min.   :  0.00   Min.   :  31.0  
- 1st Qu.:42.55   OAXACA    :  65   1st Qu.:2013   1st Qu.: 108.0   1st Qu.: 20.00   1st Qu.: 257.0  
- Median :49.02   GUANAJUATO:  63   Median :2013   Median : 241.0   Median : 29.00   Median : 468.0  
- Mean   :47.90   CHIHUAHUA :  62   Mean   :2013   Mean   : 574.5   Mean   : 40.77   Mean   : 607.6  
- 3rd Qu.:53.60   HIDALGO   :  59   3rd Qu.:2013   3rd Qu.: 591.0   3rd Qu.: 53.00   3rd Qu.: 932.0  
- Max.   :67.85   QUERETARO :  58   Max.   :2013   Max.   :3738.0   Max.   :174.00   Max.   :1632.0  
-                 (Other)   :1141                                                                    
- ab_ext_preval      ab_ext_inc          NOM_ENT        NOM_ABR    
- Min.   : 19.00   Min.   : 29.0   JALISCO   :  74   JAL.   :  74  
- 1st Qu.: 49.00   1st Qu.: 64.0   OAXACA    :  65   OAX.   :  65  
- Median : 59.00   Median :103.0   GUANAJUATO:  63   GTO.   :  63  
- Mean   : 70.27   Mean   :115.7   CHIHUAHUA :  62   CHIH.  :  62  
- 3rd Qu.: 83.00   3rd Qu.:144.0   HIDALGO   :  59   HGO.   :  59  
- Max.   :180.00   Max.   :286.0   QUERETARO :  58   QRO.   :  58  
-                                  (Other)   :1141   (Other):1141  
+       rel_offenders_NA had_weapon_NA       extortion_type extortion_type_bin extortion_type_wocp complied_bin_NA
+ Total stranger:724     No   : 352    Remote       :1437   Remote   :1437     Remote   :1437      No :1434       
+ Known         : 31     Yes  :  36    Street       :  62   In person:  85     In person:  78      Yes:  88       
+ DK/DA         :767     DK/DA:1134    Premises     :  16                      Other    :   7                     
+                                      Cobro de piso:   7                                                         
+                                                                                                                 
+                                                                                                                 
+                                                                                                                 
+    CVE_ENT        extortions      extortion_victim rep_extortion_victim rep_extortions        bribes        bribe1  
+ Min.   : 1.00   Min.   : 0.0000   1: 170           Min.   :0.00000      Min.   : 0.0000   Min.   : 0.0000   1: 181  
+ 1st Qu.: 9.00   1st Qu.: 0.0000   2:1326           1st Qu.:0.00000      1st Qu.: 0.0000   1st Qu.: 0.0000   2:1310  
+ Median :16.00   Median : 0.0000   9:  26           Median :0.00000      Median : 0.0000   Median : 0.0000   9:  31  
+ Mean   :16.35   Mean   : 0.5986                    Mean   :0.06636      Mean   : 0.4869   Mean   : 0.3154           
+ 3rd Qu.:24.00   3rd Qu.: 0.0000                    3rd Qu.:0.00000      3rd Qu.: 0.0000   3rd Qu.: 0.0000           
+ Max.   :32.00   Max.   :33.0000                    Max.   :1.00000      Max.   :32.0000   Max.   :13.0000           
+                                                                                                                     
+ bribe2   bribe3   bribe4    bribe_victim      rep_bribe       bribe_cats     size     sector     tempsub      
+ 1: 181   1: 181   1: 181   Min.   :0.0000   Min.   :0.00000   0 :1341    Large :373   C:491   Min.   :212410  
+ 2:1310   2:1310   2:1310   1st Qu.:0.0000   1st Qu.:0.00000   1 :  84    Medium:369   I:478   1st Qu.:369135  
+ 9:  31   9:  31   9:  31   Median :0.0000   Median :0.00000   2 :  30    Small :353   S:553   Median :517110  
+                            Mean   :0.1189   Mean   :0.06373   3+:  67    Micro :427           Mean   :518096  
+                            3rd Qu.:0.0000   3rd Qu.:0.00000                                   3rd Qu.:671810  
+                            Max.   :1.0000   Max.   :1.00000                                   Max.   :812910  
+                                                                                                               
+          subsector         subsector_safe     years         yearsquant        X               N         
+ Retail        : 45   Manufacturing:336    Min.   : 0.00   [0,8]  :359   Min.   : 1.00   Min.   : 534.0  
+ HotelsRestBar :233   Health       :265    1st Qu.: 9.00   (8,16] :296   1st Qu.: 9.00   1st Qu.: 745.0  
+ Manufacturing :336   HotelsRestBar:233    Median :20.00   (16,25]:297   Median :16.00   Median : 838.0  
+ Other industry:219   Construction :198    Mean   :20.31   (25,34]:306   Mean   :16.35   Mean   : 876.9  
+ Other serv.   :547   Maintenance  :126    3rd Qu.:31.00   (34,43]:264   3rd Qu.:24.00   3rd Qu.: 961.0  
+ Transport     : 80   Transport    : 80    Max.   :43.00                 Max.   :32.00   Max.   :1657.0  
+ Wholesale     : 62   (Other)      :284                                                                  
+ denuncias_homs     poblacion           tasahom       bribes_preval    bribes_inci      bribes_conc     bribes_abvic   
+ Min.   :  39.0   Min.   :  698295   Min.   : 1.938   Min.   :16.93   Min.   : 31.42   Min.   :1.318   Min.   : 14.00  
+ 1st Qu.: 151.0   1st Qu.: 1874188   1st Qu.: 7.797   1st Qu.:31.50   1st Qu.: 64.99   1st Qu.:1.693   1st Qu.: 27.00  
+ Median : 536.0   Median : 2932313   Median :12.814   Median :42.20   Median : 88.77   Median :1.882   Median : 34.00  
+ Mean   : 598.5   Mean   : 3964424   Mean   :15.903   Mean   :45.69   Mean   :106.72   Mean   :2.287   Mean   : 39.34  
+ 3rd Qu.: 775.0   3rd Qu.: 4941059   3rd Qu.:20.165   3rd Qu.:56.95   3rd Qu.:125.46   3rd Qu.:2.263   3rd Qu.: 53.00  
+ Max.   :2087.0   Max.   :16364210   Max.   :59.225   Max.   :94.14   Max.   :420.16   Max.   :5.797   Max.   :101.00  
+                                                                                                                       
+ bribes_abincs     Incidence        Prevalence     Concentration       defun        defun_arma      ind_general   
+ Min.   : 26.0   Min.   : 45.67   Min.   : 23.85   Min.   :1.163   Min.   :  46   Min.   :   8.0   Min.   :25.26  
+ 1st Qu.: 48.0   1st Qu.: 83.42   1st Qu.: 56.50   1st Qu.:1.340   1st Qu.: 214   1st Qu.: 111.0   1st Qu.:42.55  
+ Median : 74.0   Median :116.80   Median : 67.17   Median :1.589   Median : 648   Median : 402.0   Median :49.02  
+ Mean   : 90.9   Mean   :131.75   Mean   : 80.67   Mean   :1.643   Mean   : 755   Mean   : 470.7   Mean   :47.90  
+ 3rd Qu.:108.0   3rd Qu.:172.60   3rd Qu.: 99.25   3rd Qu.:1.820   3rd Qu.: 832   3rd Qu.: 526.0   3rd Qu.:53.60  
+ Max.   :371.0   Max.   :290.12   Max.   :190.69   Max.   :2.709   Max.   :3265   Max.   :2049.0   Max.   :67.85  
+                                                                                                                  
+  ind_derecho       Derecho         General            ENTIDAD          AÃ.O          drogas             do        
+ Min.   :21.37   Min.   :21.37   Min.   :25.26   JALISCO   :  74   Min.   :2013   Min.   :  37.0   Min.   :  0.00  
+ 1st Qu.:49.83   1st Qu.:49.83   1st Qu.:42.55   OAXACA    :  65   1st Qu.:2013   1st Qu.: 108.0   1st Qu.: 20.00  
+ Median :55.50   Median :55.50   Median :49.02   GUANAJUATO:  63   Median :2013   Median : 241.0   Median : 29.00  
+ Mean   :54.12   Mean   :54.12   Mean   :47.90   CHIHUAHUA :  62   Mean   :2013   Mean   : 574.5   Mean   : 40.77  
+ 3rd Qu.:62.15   3rd Qu.:62.15   3rd Qu.:53.60   HIDALGO   :  59   3rd Qu.:2013   3rd Qu.: 591.0   3rd Qu.: 53.00  
+ Max.   :78.40   Max.   :78.40   Max.   :67.85   QUERETARO :  58   Max.   :2013   Max.   :3738.0   Max.   :174.00  
+                                                 (Other)   :1141                                                   
+     armas        ab_ext_preval      ab_ext_inc          NOM_ENT        NOM_ABR    
+ Min.   :  31.0   Min.   : 19.00   Min.   : 29.0   JALISCO   :  74   JAL.   :  74  
+ 1st Qu.: 257.0   1st Qu.: 49.00   1st Qu.: 64.0   OAXACA    :  65   OAX.   :  65  
+ Median : 468.0   Median : 59.00   Median :103.0   GUANAJUATO:  63   GTO.   :  63  
+ Mean   : 607.6   Mean   : 70.27   Mean   :115.7   CHIHUAHUA :  62   CHIH.  :  62  
+ 3rd Qu.: 932.0   3rd Qu.: 83.00   3rd Qu.:144.0   HIDALGO   :  59   HGO.   :  59  
+ Max.   :1632.0   Max.   :180.00   Max.   :286.0   QUERETARO :  58   QRO.   :  58  
+                                                   (Other)   :1141   (Other):1141  
 ```
 
 ```r
@@ -3978,10 +3950,10 @@ Call:
 glm(formula = compliance_formula2, family = binomial(), data = enve_premises)
 
 Deviance Residuals: 
-         1           2           3           4           5           6           7           8           9  
--3.971e-06   3.971e-06   3.971e-06   3.971e-06   3.971e-06   3.971e-06   3.971e-06   3.971e-06   3.971e-06  
-        10          11          12          13          14          15          16  
- 3.971e-06   3.971e-06  -3.971e-06  -3.971e-06   3.971e-06   3.971e-06   3.971e-06  
+         1           2           3           4           5           6           7           8           9          10  
+-3.971e-06   3.971e-06   3.971e-06   3.971e-06   3.971e-06   3.971e-06   3.971e-06   3.971e-06   3.971e-06   3.971e-06  
+        11          12          13          14          15          16  
+ 3.971e-06  -3.971e-06  -3.971e-06   3.971e-06   3.971e-06   3.971e-06  
 
 Coefficients: (13 not defined because of singularities)
                                 Estimate Std. Error z value Pr(>|z|)
@@ -3992,9 +3964,9 @@ n_offenders_NA4+              -5.113e+01  4.320e+05       0        1
 n_offenders_NADK/DA           -5.113e+01  4.320e+05       0        1
 had_weapon_NAYes                      NA         NA      NA       NA
 had_weapon_NADK/DA                    NA         NA      NA       NA
-mylog(extortions)              9.062e-08  4.816e+05       0        1
-mylog(bribes)                  1.490e-07  5.214e+05       0        1
-subsectorManufacturing        -2.101e-06  6.831e+05       0        1
+mylog(extortions)              3.768e-09  4.816e+05       0        1
+mylog(bribes)                 -1.518e-06  5.214e+05       0        1
+subsectorManufacturing        -2.100e-06  6.831e+05       0        1
 subsectorOther industry               NA         NA      NA       NA
 subsectorOther serv.           5.113e+01  4.320e+05       0        1
 sizeMedium                            NA         NA      NA       NA
@@ -4372,8 +4344,8 @@ Deviance Residuals:
 
 Coefficients:
                    Estimate Std. Error z value Pr(>|z|)
-(Intercept)           31.44   31668.51   0.001    0.999
-yearsquant(16,25]    -43.82   35731.48  -0.001    0.999
+(Intercept)           31.44   31668.52   0.001    0.999
+yearsquant(16,25]    -43.82   35731.49  -0.001    0.999
 yearsquant(25,34]   -101.18   55283.76  -0.002    0.999
 yearsquant(34,43]     25.05   50914.40   0.000    1.000
 mylog(armas, TRUE)  -103.05   60298.86  -0.002    0.999
@@ -4545,10 +4517,10 @@ m1_premises_stepCL
 ```
 $coefs
                      estimate       SE   z.value       p.value     ci.low   ci.high sig
-(Intercept)          31.43524 1.298515  24.20861 1.805441e-129   28.89020  33.98029 ***
-yearsquant(16,25]   -43.82013 2.138071 -20.49517  2.377735e-93  -48.01067 -39.62959 ***
-yearsquant(25,34]  -101.17950 3.708544 -27.28281 6.785189e-164 -108.44811 -93.91089 ***
-yearsquant(34,43]    25.05010 1.325109  18.90417  1.053767e-79   22.45293  27.64726 ***
+(Intercept)          31.43524 1.298515  24.20861 1.805714e-129   28.89020  33.98029 ***
+yearsquant(16,25]   -43.82013 2.138072 -20.49516  2.377892e-93  -48.01067 -39.62958 ***
+yearsquant(25,34]  -101.17950 3.708544 -27.28281 6.785574e-164 -108.44811 -93.91089 ***
+yearsquant(34,43]    25.05010 1.325109  18.90417  1.053801e-79   22.45293  27.64726 ***
 mylog(armas, TRUE) -103.05008 3.804501 -27.08636 1.425614e-161 -110.50676 -95.59339 ***
 
 $clusterid
@@ -4561,7 +4533,7 @@ Model 1: complied_bin_NA ~ yearsquant + mylog(armas, TRUE)
 Model 2: complied_bin_NA ~ 1
   Res.Df Df      Chisq Pr(>Chisq)    
 1     11                             
-2     15 -4 1089086050  < 2.2e-16 ***
+2     15 -4 1089082332  < 2.2e-16 ***
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 ```
@@ -4593,25 +4565,25 @@ glm(formula = complied_bin_NA ~ n_offenders_NA + mylog(bribes) +
     mylog(drogas, TRUE), family = binomial(), data = enve_premises)
 
 Deviance Residuals: 
-         1           2           3           4           5           6           7           8           9  
--3.971e-06   3.971e-06   3.971e-06   3.971e-06   3.971e-06   3.971e-06   3.971e-06   3.971e-06   3.971e-06  
-        10          11          12          13          14          15          16  
- 3.971e-06   3.971e-06  -3.971e-06  -3.971e-06   3.971e-06   3.971e-06   3.971e-06  
+         1           2           3           4           5           6           7           8           9          10  
+-3.971e-06   3.971e-06   3.971e-06   3.971e-06   3.971e-06   3.971e-06   3.971e-06   3.971e-06   3.971e-06   3.971e-06  
+        11          12          13          14          15          16  
+ 3.971e-06  -3.971e-06  -3.971e-06   3.971e-06   3.971e-06   3.971e-06  
 
 Coefficients:
                            Estimate Std. Error z value Pr(>|z|)
-(Intercept)                  -33.73  577613.49       0        1
-n_offenders_NA2               35.44  329978.60       0        1
-n_offenders_NA3              -51.13  305470.19       0        1
-n_offenders_NA4+              35.44  430673.66       0        1
-n_offenders_NADK/DA           35.44  494174.06       0        1
-mylog(bribes)                 15.17  325406.81       0        1
-yearsquant(16,25]            -30.11  645768.03       0        1
-yearsquant(25,34]             10.24  488267.77       0        1
-yearsquant(34,43]             51.83  452023.99       0        1
-mylog(bribes_abvic, TRUE)     27.89  556230.55       0        1
+(Intercept)                  -33.73  577613.45       0        1
+n_offenders_NA2               35.44  329978.59       0        1
+n_offenders_NA3              -51.13  305470.36       0        1
+n_offenders_NA4+              35.44  430673.61       0        1
+n_offenders_NADK/DA           35.44  494174.12       0        1
+mylog(bribes)                 15.17  325406.94       0        1
+yearsquant(16,25]            -30.11  645768.07       0        1
+yearsquant(25,34]             10.24  488267.82       0        1
+yearsquant(34,43]             51.83  452023.96       0        1
+mylog(bribes_abvic, TRUE)     27.89  556230.81       0        1
 mylog(armas, TRUE)           -29.58  365075.91       0        1
-mylog(drogas, TRUE)          -14.66  141821.82       0        1
+mylog(drogas, TRUE)          -14.66  141821.86       0        1
 
 (Dispersion parameter for binomial family taken to be 1)
 
@@ -4672,12 +4644,12 @@ car::vif(m1_premises_step2)
 
 ```
                                 GVIF Df GVIF^(1/(2*Df))
-n_offenders_NA            100.239222  4        1.778811
-mylog(bribes)              14.993349  1        3.872125
-yearsquant                297.472562  3        2.583694
-mylog(bribes_abvic, TRUE)   8.855696  1        2.975852
-mylog(armas, TRUE)         13.259983  1        3.641426
-mylog(drogas, TRUE)         9.211358  1        3.035022
+n_offenders_NA            100.239285  4        1.778811
+mylog(bribes)              14.993362  1        3.872126
+yearsquant                297.472899  3        2.583695
+mylog(bribes_abvic, TRUE)   8.855704  1        2.975854
+mylog(armas, TRUE)         13.260000  1        3.641428
+mylog(drogas, TRUE)         9.211364  1        3.035023
 ```
 
 ```r
@@ -4795,7 +4767,7 @@ m1_premises_step2CL <- summaryCL(m1_premises_step2, cluster_form)
 ```
 
 ```
-Error in solve.default(vc[ovar, ovar]): system is computationally singular: reciprocal condition number = 6.69422e-18
+Error in solve.default(vc[ovar, ovar]): system is computationally singular: reciprocal condition number = 3.14961e-19
 ```
 
 ```r
@@ -5017,10 +4989,10 @@ Warning: glm.fit: fitted probabilities numerically 0 or 1 occurred
 - mylog(drogas, TRUE)            1     0.00  56.00
 <none>                                 0.00  58.00
 - n_offenders_NA                 4    38.08  88.08
-- scale(General, scale = FALSE)  1   288.35 344.35
+- mylog(N, TRUE)                 1   144.17 200.17
+- mylog(armas, TRUE)             1   432.52 488.52
 - mylog(bribes_abvic, TRUE)      1   432.52 488.52
-- mylog(N, TRUE)                 1   432.52 488.52
-- mylog(armas, TRUE)             1   576.70 632.70
+- scale(General, scale = FALSE)  1   504.61 560.61
 ```
 
 ```
@@ -5746,8 +5718,8 @@ car::vif(m1_street_step)
 
 ```
                                      GVIF Df GVIF^(1/(2*Df))
-n_offenders_NA                347347.8199  4        4.927148
-size                           14180.1983  3        4.919795
+n_offenders_NA                347347.8207  4        4.927148
+size                           14180.1984  3        4.919796
 mylog(bribes_abvic, TRUE)       4124.4448  1       64.221841
 mylog(armas, TRUE)              1702.1316  1       41.256898
 mylog(drogas, TRUE)             2519.4551  1       50.194174
@@ -5865,11 +5837,11 @@ subsector                         4.50  6     0.6095
 size                              0.00  3     1.0000    
 yearsquant                        0.00  4     1.0000    
 mylog(bribes_abvic, TRUE)       432.52  1  < 2.2e-16 ***
-mylog(armas, TRUE)              576.70  1  < 2.2e-16 ***
+mylog(armas, TRUE)              432.52  1  < 2.2e-16 ***
 mylog(drogas, TRUE)               0.00  1     0.9999    
 mylog(poblacion, TRUE)            0.00  1     1.0000    
-mylog(N, TRUE)                  432.52  1  < 2.2e-16 ***
-scale(General, scale = FALSE)   288.35  1  < 2.2e-16 ***
+mylog(N, TRUE)                  144.17  1  < 2.2e-16 ***
+scale(General, scale = FALSE)   504.61  1  < 2.2e-16 ***
 scale(Derecho, scale = FALSE)     0.00  1     1.0000    
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
@@ -5933,7 +5905,7 @@ m1_streetCL <- summaryCL(m1_street, cluster_form)
 ```
 
 ```
-Error in solve.default(vc[ovar, ovar]): system is computationally singular: reciprocal condition number = 3.77514e-18
+Error in solve.default(vc[ovar, ovar]): system is computationally singular: reciprocal condition number = 3.75651e-22
 ```
 
 ```r
@@ -5946,37 +5918,26 @@ Error in eval(expr, envir, enclos): object 'm1_streetCL' not found
 
 ```r
 m1_street_stepCL <- summaryCL(m1_street_step, cluster_form)
-```
-
-```
-Warning in sqrt(diag(se)): NaNs produced
-```
-
-```
-Warning in sqrt(diag(se)): NaNs produced
-```
-
-```r
 m1_street_stepCL
 ```
 
 ```
 $coefs
-                                 estimate  SE z.value p.value ci.low ci.high sig
-(Intercept)                   -2616.28742 NaN     NaN     NaN    NaN     NaN  NA
-n_offenders_NA2                2724.18616 NaN     NaN     NaN    NaN     NaN  NA
-n_offenders_NA3                 431.02559 NaN     NaN     NaN    NaN     NaN  NA
-n_offenders_NA4+               2973.77087 NaN     NaN     NaN    NaN     NaN  NA
-n_offenders_NADK/DA            2938.72155 NaN     NaN     NaN    NaN     NaN  NA
-sizeMedium                     -108.08766 NaN     NaN     NaN    NaN     NaN  NA
-sizeSmall                      -287.15068 NaN     NaN     NaN    NaN     NaN  NA
-sizeMicro                      2179.57405 NaN     NaN     NaN    NaN     NaN  NA
-mylog(bribes_abvic, TRUE)      1573.15059 NaN     NaN     NaN    NaN     NaN  NA
-mylog(armas, TRUE)             1031.56957 NaN     NaN     NaN    NaN     NaN  NA
-mylog(drogas, TRUE)            -923.35481 NaN     NaN     NaN    NaN     NaN  NA
-mylog(N, TRUE)                 -621.89721 NaN     NaN     NaN    NaN     NaN  NA
-scale(General, scale = FALSE)   120.12745 NaN     NaN     NaN    NaN     NaN  NA
-scale(Derecho, scale = FALSE)   -30.95207 NaN     NaN     NaN    NaN     NaN  NA
+                                 estimate         SE   z.value      p.value      ci.low     ci.high sig
+(Intercept)                   -2616.28742 705.864575 -3.706501 2.101428e-04 -3999.75657 -1232.81828 ***
+n_offenders_NA2                2724.18616 740.337896  3.679652 2.335520e-04  1273.15055  4175.22177 ***
+n_offenders_NA3                 431.02559 135.367776  3.184108 1.452009e-03   165.70962   696.34155  **
+n_offenders_NA4+               2973.77087 798.623710  3.723620 1.963868e-04  1408.49716  4539.04457 ***
+n_offenders_NADK/DA            2938.72155 791.785781  3.711511 2.060258e-04  1386.84994  4490.59317 ***
+sizeMedium                     -108.08766  25.706476 -4.204686 2.614447e-05  -158.47143   -57.70390 ***
+sizeSmall                      -287.15068  68.523850 -4.190522 2.783139e-05  -421.45496  -152.84640 ***
+sizeMicro                      2179.57405 583.935954  3.732557 1.895460e-04  1035.08061  3324.06748 ***
+mylog(bribes_abvic, TRUE)      1573.15059 408.409542  3.851895 1.172074e-04   772.68260  2373.61858 ***
+mylog(armas, TRUE)             1031.56957 278.769104  3.700444 2.152222e-04   485.19216  1577.94697 ***
+mylog(drogas, TRUE)            -923.35481 244.116753 -3.782431 1.553040e-04 -1401.81486  -444.89477 ***
+mylog(N, TRUE)                 -621.89721 234.713019 -2.649607 8.058550e-03 -1081.92627  -161.86815  **
+scale(General, scale = FALSE)   120.12745  31.650096  3.795484 1.473554e-04    58.09440   182.16050 ***
+scale(Derecho, scale = FALSE)   -30.95207   8.026527 -3.856223 1.151527e-04   -46.68378   -15.22037 ***
 
 $clusterid
 ~CVE_UNICA + CVE_ENT
@@ -5990,7 +5951,7 @@ Model 1: complied_bin_NA ~ n_offenders_NA + size + mylog(bribes_abvic,
 Model 2: complied_bin_NA ~ 1
   Res.Df  Df  Chisq Pr(>Chisq)    
 1     48                          
-2     61 -13 5429.4  < 2.2e-16 ***
+2     61 -13 4966.1  < 2.2e-16 ***
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 ```
@@ -6138,9 +6099,7 @@ Anova(m1_street)
 
 ```
 Warning: glm.fit: algorithm did not converge
-```
 
-```
 Warning: glm.fit: fitted probabilities numerically 0 or 1 occurred
 ```
 
@@ -6223,11 +6182,11 @@ subsector                         4.50  6     0.6095
 size                              0.00  3     1.0000    
 yearsquant                        0.00  4     1.0000    
 mylog(bribes_abvic, TRUE)       432.52  1  < 2.2e-16 ***
-mylog(armas, TRUE)              576.70  1  < 2.2e-16 ***
+mylog(armas, TRUE)              432.52  1  < 2.2e-16 ***
 mylog(drogas, TRUE)               0.00  1     0.9999    
 mylog(poblacion, TRUE)            0.00  1     1.0000    
-mylog(N, TRUE)                  432.52  1  < 2.2e-16 ***
-scale(General, scale = FALSE)   288.35  1  < 2.2e-16 ***
+mylog(N, TRUE)                  144.17  1  < 2.2e-16 ***
+scale(General, scale = FALSE)   504.61  1  < 2.2e-16 ***
 scale(Derecho, scale = FALSE)     0.00  1     1.0000    
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
@@ -6354,11 +6313,11 @@ Deviance Residuals:
 Coefficients: (13 not defined because of singularities)
                                 Estimate Std. Error z value Pr(>|z|)
 (Intercept)                   -2.457e+01  1.310e+05       0        1
-n_offenders_NA2                2.794e-09  1.605e+05       0        1
+n_offenders_NA2               -5.360e-08  1.605e+05       0        1
 n_offenders_NA3                4.913e+01  2.451e+05       0        1
-had_weapon_NAYes              -2.794e-09  2.451e+05       0        1
+had_weapon_NAYes               5.360e-08  2.451e+05       0        1
 mylog(extortions)              3.053e+01  9.970e+04       0        1
-mylog(bribes)                 -1.523e-14  1.151e+05       0        1
+mylog(bribes)                 -3.166e-14  1.151e+05       0        1
 subsectorManufacturing                NA         NA      NA       NA
 subsectorOther serv.                  NA         NA      NA       NA
 subsectorTransport                    NA         NA      NA       NA
@@ -6545,7 +6504,7 @@ Deviance Residuals:
 Coefficients:
                     Estimate Std. Error z value Pr(>|z|)
 (Intercept)       -2.457e+01  8.457e+04       0        1
-n_offenders_NA2    2.322e-12  1.135e+05       0        1
+n_offenders_NA2   -2.487e-11  1.135e+05       0        1
 n_offenders_NA3    4.913e+01  1.559e+05       0        1
 mylog(extortions)  3.053e+01  6.646e+04       0        1
 
@@ -6697,12 +6656,6 @@ m1_pisoCL <- summaryCL(m1_piso, cluster_form)
 ```
 
 ```
-Warning in sqrt(diag(se)): NaNs produced
-
-Warning in sqrt(diag(se)): NaNs produced
-```
-
-```
 Error in waldtest.lm(m, vcov = robust_vcov, test = "Chisq"): there are aliased coefficients in the model
 ```
 
@@ -6722,10 +6675,10 @@ m1_piso_stepCL
 ```
 $coefs
                        estimate        SE       z.value       p.value     ci.low    ci.high sig
-(Intercept)       -2.456607e+01 0.6846532 -3.588104e+01 6.036361e-282 -25.907964 -23.224173 ***
-n_offenders_NA2    2.321855e-12 0.6846536  3.391285e-12  1.000000e+00  -1.341896   1.341896    
-n_offenders_NA3    4.913214e+01 1.3110106  3.747654e+01 2.221126e-307  46.562605  51.701672 ***
-mylog(extortions)  3.052751e+01 0.8021397  3.805760e+01  0.000000e+00  28.955349  32.099679 ***
+(Intercept)       -2.456607e+01 0.6846532 -3.588104e+01 6.035884e-282 -25.907964 -23.224173 ***
+n_offenders_NA2   -2.486895e-11 0.6846532 -3.632343e-11  1.000000e+00  -1.341896   1.341896    
+n_offenders_NA3    4.913214e+01 1.3110107  3.747654e+01 2.221190e-307  46.562605  51.701672 ***
+mylog(extortions)  3.052751e+01 0.8021390  3.805763e+01  0.000000e+00  28.955350  32.099677 ***
 
 $clusterid
 ~CVE_UNICA + CVE_ENT
@@ -6775,7 +6728,7 @@ Deviance Residuals:
 Coefficients: (2 not defined because of singularities)
                             Estimate Std. Error z value Pr(>|z|)
 (Intercept)                7.494e+00  7.566e+04       0        1
-n_offenders_NA2            5.284e-10  1.605e+05       0        1
+n_offenders_NA2           -2.741e-09  1.605e+05       0        1
 n_offenders_NA3            3.499e+01  1.582e+05       0        1
 mylog(bribes)             -3.157e+01  1.010e+05       0        1
 yearsquant(34,43]                 NA         NA      NA       NA
@@ -6963,7 +6916,7 @@ Deviance Residuals:
 
 Coefficients:
                                 Estimate Std. Error z value Pr(>|z|)  
-(Intercept)                     -6.37061 3956.18278  -0.002   0.9987  
+(Intercept)                     -6.37061 3956.18276  -0.002   0.9987  
 n_offenders_NA2                  3.79359    1.70196   2.229   0.0258 *
 n_offenders_NA3                  0.66524    1.88669   0.353   0.7244  
 n_offenders_NA4+                 6.05489    2.47340   2.448   0.0144 *
@@ -6972,12 +6925,12 @@ had_weapon_NAYes                -0.04543    1.32659  -0.034   0.9727
 had_weapon_NADK/DA               4.06283   10.18346   0.399   0.6899  
 mylog(extortions)                2.61353    1.24155   2.105   0.0353 *
 mylog(bribes)                   -0.00304    1.13230  -0.003   0.9979  
-subsectorHotelsRestBar           1.18959 3956.18496   0.000   0.9998  
-subsectorManufacturing           7.30779 3956.18234   0.002   0.9985  
-subsectorOther industry          6.75749 3956.18259   0.002   0.9986  
-subsectorOther serv.             5.86287 3956.18287   0.001   0.9988  
-subsectorTransport               2.97702 3956.18390   0.001   0.9994  
-subsectorWholesale             -11.43167 4568.20582  -0.003   0.9980  
+subsectorHotelsRestBar           1.18959 3956.18494   0.000   0.9998  
+subsectorManufacturing           7.30779 3956.18232   0.002   0.9985  
+subsectorOther industry          6.75749 3956.18257   0.002   0.9986  
+subsectorOther serv.             5.86287 3956.18285   0.001   0.9988  
+subsectorTransport               2.97702 3956.18388   0.001   0.9994  
+subsectorWholesale             -11.43167 4568.20580  -0.003   0.9980  
 sizeMedium                      -3.31628    1.59943  -2.073   0.0381 *
 sizeSmall                       -4.58812    2.09038  -2.195   0.0282 *
 sizeMicro                        0.57378    1.53148   0.375   0.7079  
@@ -7477,7 +7430,7 @@ m1_inpersonCL
 ```
 $coefs
                                    estimate         SE      z.value      p.value      ci.low     ci.high sig
-(Intercept)                    -6.370612607 4.10422274 -1.552209276 1.206122e-01 -14.4147414  1.67351615    
+(Intercept)                    -6.370612595 4.20619463 -1.514578652 1.298791e-01 -14.6146026  1.87337740    
 n_offenders_NA2                 3.793595320 2.33460748  1.624939249 1.041755e-01  -0.7821513  8.36934189    
 n_offenders_NA3                 0.665244544 2.89895854  0.229477081 8.184981e-01  -5.0166098  6.34709887    
 n_offenders_NA4+                6.054890629 2.75354374  2.198944780 2.788185e-02   0.6580441 11.45173719   *
@@ -7486,12 +7439,12 @@ had_weapon_NAYes               -0.045425914 1.19262161 -0.038089126 9.696166e-01
 had_weapon_NADK/DA              4.062826874 3.19956551  1.269805808 2.041538e-01  -2.2082063 10.33386005    
 mylog(extortions)               2.613530706 1.59264750  1.640997588 1.007979e-01  -0.5080010  5.73506245    
 mylog(bribes)                  -0.003039969 0.73142407 -0.004156233 9.966838e-01  -1.4366048  1.43052486    
-subsectorHotelsRestBar          1.189595093 6.46853492  0.183904873 8.540881e-01 -11.4885004 13.86769057    
-subsectorManufacturing          7.307790071 4.05452438  1.802379115 7.148578e-02  -0.6389317 15.25451184    
-subsectorOther industry         6.757495348 4.25683160  1.587447186 1.124114e-01  -1.5857413 15.10073198    
-subsectorOther serv.            5.862864667 4.90648212  1.194922254 2.321174e-01  -3.7536636 15.47939290    
-subsectorTransport              2.977020031 4.31151614  0.690481013 4.898917e-01  -5.4733963 11.42743638    
-subsectorWholesale            -11.431667371 4.78178848 -2.390667724 1.681777e-02 -20.8038006 -2.05953418   *
+subsectorHotelsRestBar          1.189595080 6.49785650  0.183075000 8.547392e-01 -11.5459696 13.92515980    
+subsectorManufacturing          7.307790058 4.21879212  1.732199610 8.323803e-02  -0.9608905 15.57647066    
+subsectorOther industry         6.757495336 4.43293676  1.524383428 1.274130e-01  -1.9309011 15.44589173    
+subsectorOther serv.            5.862864655 4.97557040  1.178330157 2.386650e-01  -3.8890741 15.61480345    
+subsectorTransport              2.977020019 4.41593292  0.674154266 5.002132e-01  -5.6780495 11.63208951    
+subsectorWholesale            -11.431667384 4.89253035 -2.336555231 1.946232e-02 -21.0208507 -1.84248410   *
 sizeMedium                     -3.316280516 1.41679960 -2.340684249 1.924844e-02  -6.0931567 -0.53940432   *
 sizeSmall                      -4.588124463 2.07083846 -2.215587816 2.671974e-02  -8.6468933 -0.52935566   *
 sizeMicro                       0.573777726 1.26939359  0.452009316 6.512623e-01  -1.9141880  3.06174344    
@@ -7519,9 +7472,9 @@ Model 1: complied_bin_NA ~ n_offenders_NA + had_weapon_NA + mylog(extortions) +
     TRUE) + mylog(N, TRUE) + scale(General, scale = FALSE) + 
     scale(Derecho, scale = FALSE)
 Model 2: complied_bin_NA ~ 1
-  Res.Df  Df Chisq Pr(>Chisq)    
-1     56                         
-2     84 -28 45060  < 2.2e-16 ***
+  Res.Df  Df  Chisq Pr(>Chisq)    
+1     56                          
+2     84 -28 183653  < 2.2e-16 ***
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 ```
@@ -7575,7 +7528,7 @@ Model 2: complied_bin_NA ~ n_offenders_NA + had_weapon_NA + mylog(extortions) +
     scale(Derecho, scale = FALSE)
   Res.Df Df  Chisq Pr(>Chisq)    
 1     77                         
-2     56 21 308.78  < 2.2e-16 ***
+2     56 21 334.81  < 2.2e-16 ***
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 ```
@@ -7839,9 +7792,9 @@ Model 2: complied_bin_NA ~ n_offenders_NA + had_weapon_NA + mylog(extortions) +
     TRUE) + mylog(armas, TRUE) + mylog(drogas, TRUE) + mylog(poblacion, 
     TRUE) + mylog(N, TRUE) + scale(General, scale = FALSE) + 
     scale(Derecho, scale = FALSE)
-  Res.Df Df Chisq Pr(>Chisq)    
-1     72                        
-2     56 16 323.7  < 2.2e-16 ***
+  Res.Df Df  Chisq Pr(>Chisq)    
+1     72                         
+2     56 16 323.74  < 2.2e-16 ***
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 ```
@@ -8500,7 +8453,7 @@ car::vif(m1_inperson_wocp_step)
                                   GVIF Df GVIF^(1/(2*Df))
 n_offenders_NA                6.885377  4        1.272744
 subsector                     5.728666  6        1.156568
-size                          7.253979  3        1.391328
+size                          7.253978  3        1.391328
 mylog(drogas, TRUE)           3.413100  1        1.847458
 mylog(poblacion, TRUE)        2.158038  1        1.469026
 scale(Derecho, scale = FALSE) 4.593944  1        2.143349
@@ -8621,52 +8574,41 @@ $naive
 # Robust SE
 
 m1_inperson_wocpCL <- summaryCL(m1_inperson_wocp, cluster_form)
-```
-
-```
-Warning in sqrt(diag(se)): NaNs produced
-```
-
-```
-Warning in sqrt(diag(se)): NaNs produced
-```
-
-```r
 m1_inperson_wocpCL
 ```
 
 ```
 $coefs
-                                 estimate         SE    z.value      p.value       ci.low      ci.high  sig
-(Intercept)                   -10.9078992        NaN        NaN          NaN          NaN          NaN <NA>
-n_offenders_NA2                 5.9565123 2.35075312  2.5338741 1.128093e-02   1.34912088  10.56390377    *
-n_offenders_NA3               -20.0847470 3.41174437 -5.8869437 3.934026e-09 -26.77164308 -13.39785092  ***
-n_offenders_NA4+                8.4159802 2.81142726  2.9934903 2.758063e-03   2.90568400  13.92627634   **
-n_offenders_NADK/DA             3.5853645 3.01622553  1.1886924 2.345607e-01  -2.32632895   9.49705786     
-had_weapon_NAYes               -1.8292112 1.21159035 -1.5097604 1.311046e-01  -4.20388461   0.54546227     
-had_weapon_NADK/DA              3.9913294 2.22276010  1.7956636 7.254803e-02  -0.36520032   8.34785915     
-mylog(extortions)               0.8740022 0.89673925  0.9746447 3.297365e-01  -0.88357446   2.63157879     
-mylog(bribes)                   0.9399310 1.16073699  0.8097709 4.180719e-01  -1.33507168   3.21493369     
-subsectorHotelsRestBar          1.4430079        NaN        NaN          NaN          NaN          NaN <NA>
-subsectorManufacturing          8.0618885        NaN        NaN          NaN          NaN          NaN <NA>
-subsectorOther industry         9.8700296        NaN        NaN          NaN          NaN          NaN <NA>
-subsectorOther serv.            7.1084191        NaN        NaN          NaN          NaN          NaN <NA>
-subsectorTransport              4.9482957        NaN        NaN          NaN          NaN          NaN <NA>
-subsectorWholesale            -14.1304872        NaN        NaN          NaN          NaN          NaN <NA>
-sizeMedium                     -1.5130129 2.01289028 -0.7516619 4.522544e-01  -5.45820535   2.43217955     
-sizeSmall                      -4.8675884 1.52605553 -3.1896535 1.424435e-03  -7.85860226  -1.87657452   **
-sizeMicro                       3.2535749 1.93666943  1.6799846 9.296030e-02  -0.54222744   7.04937721     
-yearsquant(8,16]               -0.4525645 1.66309967 -0.2721211 7.855289e-01  -3.71217999   2.80705092     
-yearsquant(16,25]              -0.2900741 1.77686979 -0.1632501 8.703216e-01  -3.77267489   3.19252670     
-yearsquant(25,34]              -1.5176799 1.74042346 -0.8720176 3.831988e-01  -4.92884715   1.89348743     
-yearsquant(34,43]               2.0085568 1.91220061  1.0503902 2.935387e-01  -1.73928750   5.75640116     
-mylog(bribes_abvic, TRUE)       1.9124560 2.71723710  0.7038237 4.815425e-01  -3.41323087   7.23814284     
-mylog(armas, TRUE)              0.2508392 0.91629617  0.2737534 7.842741e-01  -1.54506831   2.04674668     
-mylog(drogas, TRUE)            -1.8150962 0.91295211 -1.9881614 4.679384e-02  -3.60444944  -0.02574292    *
-mylog(poblacion, TRUE)          1.7735170 0.90636381  1.9567385 5.037822e-02  -0.00292342   3.54995744     
-mylog(N, TRUE)                 -2.7675229 3.40884168 -0.8118661 4.168685e-01  -9.44872986   3.91368400     
-scale(General, scale = FALSE)   0.1036543 0.11499884  0.9013505 3.674020e-01  -0.12173933   0.32904784     
-scale(Derecho, scale = FALSE)  -0.2359681 0.07088015 -3.3291148 8.712249e-04  -0.37489068  -0.09704561  ***
+                                 estimate         SE    z.value      p.value       ci.low      ci.high sig
+(Intercept)                   -10.9078991 5.19320971 -2.1004157 3.569229e-02 -21.08640306  -0.72939507   *
+n_offenders_NA2                 5.9565123 2.35075312  2.5338741 1.128093e-02   1.34912088  10.56390377   *
+n_offenders_NA3               -20.0847470 3.41174437 -5.8869437 3.934026e-09 -26.77164308 -13.39785092 ***
+n_offenders_NA4+                8.4159802 2.81142726  2.9934903 2.758063e-03   2.90568400  13.92627634  **
+n_offenders_NADK/DA             3.5853645 3.01622553  1.1886924 2.345607e-01  -2.32632895   9.49705786    
+had_weapon_NAYes               -1.8292112 1.21159035 -1.5097604 1.311046e-01  -4.20388461   0.54546227    
+had_weapon_NADK/DA              3.9913294 2.22276010  1.7956636 7.254803e-02  -0.36520032   8.34785915    
+mylog(extortions)               0.8740022 0.89673925  0.9746447 3.297365e-01  -0.88357446   2.63157879    
+mylog(bribes)                   0.9399310 1.16073699  0.8097709 4.180719e-01  -1.33507168   3.21493369    
+subsectorHotelsRestBar          1.4430078 5.36941089  0.2687460 7.881251e-01  -9.08084418  11.96685974    
+subsectorManufacturing          8.0618883 4.70086592  1.7149794 8.634900e-02  -1.15163959  17.27541622    
+subsectorOther industry         9.8700295 5.01192555  1.9693089 4.891763e-02   0.04683591  19.69322303   *
+subsectorOther serv.            7.1084190 5.86863710  1.2112555 2.257975e-01  -4.39389836  18.61073635    
+subsectorTransport              4.9482956 6.56726079  0.7534794 4.511619e-01  -7.92329904  17.81989021    
+subsectorWholesale            -14.1304874 6.36775900 -2.2190676 2.648213e-02 -26.61106567  -1.64990907   *
+sizeMedium                     -1.5130129 2.01289028 -0.7516619 4.522544e-01  -5.45820535   2.43217955    
+sizeSmall                      -4.8675884 1.52605553 -3.1896535 1.424435e-03  -7.85860226  -1.87657452  **
+sizeMicro                       3.2535749 1.93666943  1.6799846 9.296030e-02  -0.54222744   7.04937721    
+yearsquant(8,16]               -0.4525645 1.66309967 -0.2721211 7.855289e-01  -3.71217999   2.80705092    
+yearsquant(16,25]              -0.2900741 1.77686979 -0.1632501 8.703216e-01  -3.77267489   3.19252670    
+yearsquant(25,34]              -1.5176799 1.74042346 -0.8720176 3.831988e-01  -4.92884715   1.89348743    
+yearsquant(34,43]               2.0085568 1.91220061  1.0503902 2.935387e-01  -1.73928750   5.75640116    
+mylog(bribes_abvic, TRUE)       1.9124560 2.71723710  0.7038237 4.815425e-01  -3.41323087   7.23814284    
+mylog(armas, TRUE)              0.2508392 0.91629617  0.2737534 7.842741e-01  -1.54506831   2.04674668    
+mylog(drogas, TRUE)            -1.8150962 0.91295211 -1.9881614 4.679384e-02  -3.60444944  -0.02574292   *
+mylog(poblacion, TRUE)          1.7735170 0.90636381  1.9567385 5.037822e-02  -0.00292342   3.54995744    
+mylog(N, TRUE)                 -2.7675229 3.40884168 -0.8118661 4.168685e-01  -9.44872986   3.91368400    
+scale(General, scale = FALSE)   0.1036543 0.11499884  0.9013505 3.674020e-01  -0.12173933   0.32904784    
+scale(Derecho, scale = FALSE)  -0.2359681 0.07088015 -3.3291148 8.712249e-04  -0.37489068  -0.09704561 ***
 
 $clusterid
 ~CVE_UNICA + CVE_ENT
@@ -8680,9 +8622,9 @@ Model 1: complied_bin_NA ~ n_offenders_NA + had_weapon_NA + mylog(extortions) +
     TRUE) + mylog(N, TRUE) + scale(General, scale = FALSE) + 
     scale(Derecho, scale = FALSE)
 Model 2: complied_bin_NA ~ 1
-  Res.Df  Df   Chisq Pr(>Chisq)    
-1     49                           
-2     77 -28 7963277  < 2.2e-16 ***
+  Res.Df  Df    Chisq Pr(>Chisq)    
+1     49                            
+2     77 -28 31234895  < 2.2e-16 ***
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 ```
@@ -8693,7 +8635,9 @@ m1_inperson_wocp_stepCL <- summaryCL(m1_inperson_wocp_step, cluster_form)
 
 ```
 Warning in sqrt(diag(se)): NaNs produced
+```
 
+```
 Warning in sqrt(diag(se)): NaNs produced
 ```
 
@@ -8711,10 +8655,10 @@ n_offenders_NA4+                5.8137566 1.79981469   3.230197 1.237048e-03   2
 n_offenders_NADK/DA             5.4044539 2.72958193   1.979957 4.770840e-02   0.05457161  10.75433615    *
 subsectorHotelsRestBar          6.6633919        NaN        NaN          NaN          NaN          NaN <NA>
 subsectorManufacturing         10.5491505        NaN        NaN          NaN          NaN          NaN <NA>
-subsectorOther industry        12.5603335        NaN        NaN          NaN          NaN          NaN <NA>
+subsectorOther industry        12.5603334        NaN        NaN          NaN          NaN          NaN <NA>
 subsectorOther serv.           10.0823850        NaN        NaN          NaN          NaN          NaN <NA>
 subsectorTransport              5.9770705        NaN        NaN          NaN          NaN          NaN <NA>
-subsectorWholesale            -10.4442339        NaN        NaN          NaN          NaN          NaN <NA>
+subsectorWholesale            -10.4442340        NaN        NaN          NaN          NaN          NaN <NA>
 sizeMedium                     -2.1691522 1.46578995  -1.479852 1.389127e-01  -5.04204775   0.70374326     
 sizeSmall                      -3.4951282 1.44784955  -2.414013 1.577788e-02  -6.33286118  -0.65739522    *
 sizeMicro                       1.6316037 1.43341142   1.138266 2.550094e-01  -1.17783109   4.44103842     
@@ -8733,7 +8677,7 @@ Model 1: complied_bin_NA ~ n_offenders_NA + subsector + size + mylog(drogas,
 Model 2: complied_bin_NA ~ 1
   Res.Df  Df  Chisq Pr(>Chisq)    
 1     61                          
-2     77 -16 723.33  < 2.2e-16 ***
+2     77 -16 762.62  < 2.2e-16 ***
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 ```
@@ -9042,7 +8986,7 @@ Model 2: complied_bin_NA ~ n_offenders_NA + had_weapon_NA + mylog(extortions) +
     scale(Derecho, scale = FALSE)
   Res.Df Df  Chisq Pr(>Chisq)    
 1     65                         
-2     49 16 250.57  < 2.2e-16 ***
+2     49 16 297.55  < 2.2e-16 ***
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 ```
@@ -9058,7 +9002,7 @@ time
 
 ```
    user  system elapsed 
- 22.497  54.180  13.017 
+  22.05    1.08   26.25 
 ```
 
 ```r
@@ -9067,5 +9011,5 @@ print(paste("the script took", round(time[3]/60,2),
 ```
 
 ```
-[1] "the script took 0.22 minutes to run."
+[1] "the script took 0.44 minutes to run."
 ```

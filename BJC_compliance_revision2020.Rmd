@@ -14,7 +14,8 @@ knitr::opts_chunk$set(echo = TRUE,
                       comment="",
                       cache=TRUE,
                       #dev=c("png", "CairoPDF"),
-                      error=TRUE)
+                      error=TRUE,
+                      cache = FALSE)
 options(knitr.kable.NA = '---')
 ```
 
