@@ -19,41 +19,56 @@ La instalación de paquetes solo se requiere realizar una vez. La ejecución del
 
 Los paquetes requeridos por este proyecto son los siguientes:
 
-```{r required-packages, echo = FALSE}
 
-knitr::opts_chunk$set(comment="")
-
-source("required_packages.R")
-
-for(i in 1:length(packages)){
-    cat(paste0(packages[i],"\n"))
-}
-
+```
+## devtools
+## foreign
+## tidyverse
+## knitr
+## lazyeval
+## classInt
+## reshape2
+## lmtest
+## car
+## downloader
+## dgof
+## victim
+## sandwich
+## arsenal
 ```
 
 Algunos de estos paquetes pueden ya estar instalados en nuestra computadora.
 
 **Para verificar qué paquetes no se encuentran ya instalados e instalarlos automáticamente, ejecute el siguiente comando:**
 
-```{r, eval = FALSE}
+
+```r
 source("install_packages.R")
 ```
 
 Si prefiere, puede instalar los paquetes que hagan falta manualmente con los siguientes comandos:
 
-```{r, echo = FALSE}
 
-cranp <- packages[!packages %in% c("victim", "glmmADMB")]
-
-for(i in 1:length(cranp)){
-    cat(paste0("install.packages('",cranp[i],"')\n"))
-}
-
+```
+install.packages('devtools')
+install.packages('foreign')
+install.packages('tidyverse')
+install.packages('knitr')
+install.packages('lazyeval')
+install.packages('classInt')
+install.packages('reshape2')
+install.packages('lmtest')
+install.packages('car')
+install.packages('downloader')
+install.packages('dgof')
+install.packages('sandwich')
+install.packages('arsenal')
 ```
 
 Para instalar el paquete `victim` es necesario usar el siguiente comando (requiere tener `devtools` instalado).
 
-```{r, eval = FALSE}
+
+```r
 devtools::install_github("prestevez/victim")
 ```
 
@@ -83,7 +98,8 @@ El análisis utiliza el cuestionario principal y el módulo de delitos de la ENV
 Establezca el *working directory* en R para que apunte al folder del proyecto.
 
 Por ejemplo:
-```{r, eval = FALSE}
+
+```r
 getwd() # Devuelve cuál es el working directory actual.
 
 setwd("C:/R/ENVE_EstevezSoto") # Establece el working directory en el folder del proyecto
@@ -97,7 +113,8 @@ El proyecto está contenido en un archivo [R Markdown](http://rmarkdown.rstudio.
 
 Para correr el análisis, ejecute el siguiente comando en la consola de R:
 
-```{r, eval = FALSE}
+
+```r
 knitr::knit("BJC_compliance_revision2020.Rmd")
 ```
 
