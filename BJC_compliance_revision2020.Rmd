@@ -2,7 +2,7 @@
 title: "Extortion in Mexico: Who pays and why?"
 author: "Patricio R. Estevez Soto"
 email: "patricio.estevez.14@ucl.ac.uk"
-date: "05/05/2018"
+date: "`r Sys.Date()`"
 output:
   md_document:
     variant: "markdown"
@@ -318,11 +318,12 @@ enve_test$subsector_safe <- enve_test$subsector
 
 enve_test$subsector <- as.character(enve_test$subsector)
 
-# Must remember to exclude utilities from analysis
+# Aggregate all industry
 
 enve_test$subsector[enve_test$subsector %in%
-                      c("Mining",
-                        "Construction")] <- "Other industry"
+                      c("Manufacturing",
+                        "Mining",
+                        "Construction")] <- "Industry"
 
 # Must remember to exclude Corporate from analysis
 
