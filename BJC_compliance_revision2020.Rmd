@@ -175,6 +175,12 @@ vcov.summaryCL <- function(summaryCL.object){
 }
 
 
+csv.summaryCL <- function(summaryCL.object){
+  filename <- paste0("csv/", deparse(substitute(summaryCL.object)), ".csv")
+  readr::write_csv(summaryCL.object$coefs, path = filename)
+}
+
+
 # predictive accuracy function
 
 accuracy <- function(mod){
@@ -217,12 +223,18 @@ We first load and arrange the area and victim level data
 ```{r test-setting}
 
 ### Change if not in testing settings
-#params <- list(test = TRUE)
+params <- list(test = TRUE)
 if(params$test){
     download("https://raw.githubusercontent.com/prestevez/datahouse/master/enve2014cuest_ciega_2014.dbf",
                       destfile = "enve2014cuest_ciega_2014.dbf", mode = "wb")
     download("https://raw.githubusercontent.com/prestevez/datahouse/master/enve2014delitos_ciega_2014.dbf",
                  destfile = "enve2014delitos_ciega_2014.dbf", mode = "wb")
+}
+
+# create dir for csvs
+
+if(!dir.exists("csv")){
+  dir.create("csv")
 }
 
 list.files()
@@ -823,6 +835,8 @@ waldtest(m1_step, m1, test = "Chisq")
 
 car::vif(m1_step)
 
+lrtest(m1)
+lrtest(m1_step)
 lrtest(m1_step, m1)
 Anova(m1)
 Anova(m1_step)
@@ -847,8 +861,13 @@ cluster_form <- ~ CVE_UNICA + CVE_ENT
 m1CL <- summaryCL(m1, cluster_form)
 m1CL
 
+csv.summaryCL(m1CL)
+
 m1_stepCL <- summaryCL(m1_step, cluster_form)
 m1_stepCL
+
+csv.summaryCL(m1_stepCL)
+
 
 waldtest(m1_step, m1, test = "Chisq", vcov = vcov(m1CL))
 
@@ -904,6 +923,8 @@ waldtest(m1_remote_step, m1_remote, test = "Chisq")
 
 car::vif(m1_remote_step)
 
+lrtest(m1_remote)
+lrtest(m1_remote_step)
 lrtest(m1_remote_step, m1_remote)
 Anova(m1_remote)
 Anova(m1_remote_step)
@@ -916,8 +937,11 @@ accuracy(m1_remote_step)
 m1_remoteCL <- summaryCL(m1_remote, cluster_form)
 m1_remoteCL
 
+csv.summaryCL(m1_remoteCL)
+
 m1_remote_stepCL <- summaryCL(m1_remote_step, cluster_form)
 m1_remote_stepCL
+csv.summaryCL(m1_remote_stepCL)
 
 waldtest(m1_remote_step, m1_remote, test = "Chisq", vcov = vcov(m1_remoteCL))
 
@@ -937,6 +961,9 @@ waldtest(m1_remote_step2, m1_remote, test = "Chisq")
 
 car::vif(m1_remote_step2)
 
+lrtest(m1_remote)
+lrtest(m1_remote_step2)
+lrtest(m1_remote_step, m1_remote_step2)
 lrtest(m1_remote_step2, m1_remote)
 Anova(m1_remote)
 Anova(m1_remote_step2)
@@ -951,6 +978,8 @@ accuracy(m1_remote_step2)
 m1_remote_step2CL <- summaryCL(m1_remote_step2, cluster_form)
 m1_remote_step2CL
 
+csv.summaryCL(m1_remote_step2CL)
+
 waldtest(m1_remote_step2, m1_remote, test = "Chisq", vcov = vcov(m1_remoteCL))
 
 
@@ -958,265 +987,13 @@ waldtest(m1_remote_step2, m1_remote, test = "Chisq", vcov = vcov(m1_remoteCL))
 
 ```
 
-
-- premises
-
-
-```{r models-premises}
-
-enve_premises <- filter(enve_nona, extortion_type == "Premises")
-
-m1_premises <- glm(formula = compliance_formula2, 
-                 data = enve_premises, 
-                 family = binomial())  
-
-summary(m1_premises)
-vif(m1_premises, data = enve_nona) 
-
-logLik(m1_premises)
-
-
-m1_premises_step <- step(m1_premises, direction = "both")
-
-summary(m1_premises_step)
-logLik(m1_premises_step)
-
-waldtest(m1_premises_step, test = "Chisq")
-
-waldtest(m1_premises_step, m1_premises, test = "Chisq")
-
-car::vif(m1_premises_step)
-
-lrtest(m1_premises_step, m1_premises)
-Anova(m1_premises)
-Anova(m1_premises_step)
-
-accuracy(m1_premises)
-accuracy(m1_premises_step)
-
-# Robust SE
-
-m1_premisesCL <- summaryCL(m1_premises, cluster_form)
-m1_premisesCL
-
-m1_premises_stepCL <- summaryCL(m1_premises_step, cluster_form)
-m1_premises_stepCL
-
-waldtest(m1_premises_step, m1_premises, test = "Chisq", vcov = vcov(m1_premisesCL))
-
-# using m1_step terms
-
-m1_premises_step2 <- update(m1_step, 
-                             . ~ . - extortion_type,
-                             data = enve_premises)
-
-
-summary(m1_premises_step2)
-logLik(m1_premises_step2)
-
-waldtest(m1_premises_step2, test = "Chisq")
-
-waldtest(m1_premises_step2, m1_premises, test = "Chisq")
-
-car::vif(m1_premises_step2)
-
-lrtest(m1_premises_step2, m1_premises)
-Anova(m1_premises)
-Anova(m1_premises_step2)
-
-accuracy(m1_premises)
-accuracy(m1_premises_step2)
-
-# Robust SE
-
-
-
-m1_premises_step2CL <- summaryCL(m1_premises_step2, cluster_form)
-m1_premises_step2CL
-
-waldtest(m1_premises_step2, m1_premises, test = "Chisq", vcov = vcov(m1_premisesCL))
-
-
-
-
-
-```
-
-- street
-
-
-
-```{r models-street}
-
-enve_street <- filter(enve_nona, extortion_type == "Street")
-
-m1_street <- glm(formula = compliance_formula2, 
-                 data = enve_street, 
-                 family = binomial())  
-
-summary(m1_street)
-vif(m1_street, data = enve_nona) 
-
-logLik(m1_street)
-
-
-m1_street_step <- step(m1_street, direction = "both")
-
-summary(m1_street_step)
-logLik(m1_street_step)
-
-waldtest(m1_street_step, test = "Chisq")
-
-waldtest(m1_street_step, m1_street, test = "Chisq")
-
-car::vif(m1_street_step)
-
-lrtest(m1_street_step, m1_street)
-Anova(m1_street)
-Anova(m1_street_step)
-
-accuracy(m1_street)
-accuracy(m1_street_step)
-
-# Robust SE
-
-m1_streetCL <- summaryCL(m1_street, cluster_form)
-m1_streetCL
-
-m1_street_stepCL <- summaryCL(m1_street_step, cluster_form)
-m1_street_stepCL
-
-waldtest(m1_street_step, m1_street, test = "Chisq", vcov = vcov(m1_streetCL))
-
-# using m1_step terms
-
-m1_street_step2 <- update(m1_step, 
-                             . ~ . - extortion_type,
-                             data = enve_street)
-
-
-summary(m1_street_step2)
-logLik(m1_street_step2)
-
-waldtest(m1_street_step2, test = "Chisq")
-
-waldtest(m1_street_step2, m1_street, test = "Chisq")
-
-car::vif(m1_street_step2)
-
-lrtest(m1_street_step2, m1_street)
-Anova(m1_street)
-Anova(m1_street_step2)
-
-accuracy(m1_street)
-accuracy(m1_street_step2)
-
-# Robust SE
-
-
-
-m1_street_step2CL <- summaryCL(m1_street_step2, cluster_form)
-m1_street_step2CL
-
-waldtest(m1_street_step2, m1_street, test = "Chisq", vcov = vcov(m1_streetCL))
-
-
-
-
-
-```
-
-- cobro de piso
-
-
-
-```{r models-piso}
-enve_piso <- filter(enve_nona, extortion_type == "Cobro de piso")
-
-m1_piso <- glm(formula = compliance_formula2, 
-                 data = enve_piso, 
-                 family = binomial())  
-
-summary(m1_piso)
-vif(m1_piso, data = enve_nona) 
-
-logLik(m1_piso)
-
-
-m1_piso_step <- step(m1_piso, direction = "both")
-
-summary(m1_piso_step)
-logLik(m1_piso_step)
-
-waldtest(m1_piso_step, test = "Chisq")
-
-waldtest(m1_piso_step, m1_piso, test = "Chisq")
-
-car::vif(m1_piso_step)
-
-lrtest(m1_piso_step, m1_piso)
-Anova(m1_piso)
-Anova(m1_piso_step)
-
-accuracy(m1_piso)
-accuracy(m1_piso_step)
-
-# Robust SE
-
-m1_pisoCL <- summaryCL(m1_piso, cluster_form)
-m1_pisoCL
-
-m1_piso_stepCL <- summaryCL(m1_piso_step, cluster_form)
-m1_piso_stepCL
-
-waldtest(m1_piso_step, m1_piso, test = "Chisq", vcov = vcov(m1_pisoCL))
-
-# using m1_step terms
-
-m1_piso_step2 <- update(m1_step, 
-                             . ~ . - extortion_type,
-                             data = enve_piso)
-
-
-summary(m1_piso_step2)
-logLik(m1_piso_step2)
-
-waldtest(m1_piso_step2, test = "Chisq")
-
-waldtest(m1_piso_step2, m1_piso, test = "Chisq")
-
-car::vif(m1_piso_step2)
-
-lrtest(m1_piso_step2, m1_piso)
-Anova(m1_piso)
-Anova(m1_piso_step2)
-
-accuracy(m1_piso)
-accuracy(m1_piso_step2)
-
-# Robust SE
-
-
-
-m1_piso_step2CL <- summaryCL(m1_piso_step2, cluster_form)
-m1_piso_step2CL
-
-waldtest(m1_piso_step2, m1_piso, test = "Chisq", vcov = vcov(m1_pisoCL))
-
-
-
-
-
-```
-
-
 - Inperson (agg)
 
 ```{r models-in-person}
 
 enve_inperson <- filter(enve_nona, extortion_type_bin == "In person")
 
-m1_inperson <- glm(formula = compliance_formula2, 
+m1_inperson <- glm(formula = compliance_formula, 
                  data = enve_inperson, 
                  family = binomial())  
 
@@ -1237,6 +1014,8 @@ waldtest(m1_inperson_step, m1_inperson, test = "Chisq")
 
 car::vif(m1_inperson_step)
 
+lrtest(m1_inperson)
+lrtest(m1_inperson_step)
 lrtest(m1_inperson_step, m1_inperson)
 Anova(m1_inperson)
 Anova(m1_inperson_step)
@@ -1249,15 +1028,18 @@ accuracy(m1_inperson_step)
 m1_inpersonCL <- summaryCL(m1_inperson, cluster_form)
 m1_inpersonCL
 
+csv.summaryCL(m1_inpersonCL)
+
 m1_inperson_stepCL <- summaryCL(m1_inperson_step, cluster_form)
 m1_inperson_stepCL
+
+csv.summaryCL(m1_inperson_stepCL)
 
 waldtest(m1_inperson_step, m1_inperson, test = "Chisq", vcov = vcov(m1_inpersonCL))
 
 # using m1_step terms
 
-m1_inperson_step2 <- update(m1_step, 
-                             . ~ . - extortion_type,
+m1_inperson_step2 <- update(m1_step,
                              data = enve_inperson)
 
 
@@ -1270,7 +1052,10 @@ waldtest(m1_inperson_step2, m1_inperson, test = "Chisq")
 
 car::vif(m1_inperson_step2)
 
+lrtest(m1_inperson)
+lrtest(m1_inperson_step2)
 lrtest(m1_inperson_step2, m1_inperson)
+lrtest(m1_inperson_step, m1_inperson_step2)
 Anova(m1_inperson)
 Anova(m1_inperson_step2)
 
@@ -1284,6 +1069,8 @@ accuracy(m1_inperson_step2)
 m1_inperson_step2CL <- summaryCL(m1_inperson_step2, cluster_form)
 m1_inperson_step2CL
 
+csv.summaryCL(m1_inperson_step2CL)
+
 waldtest(m1_inperson_step2, m1_inperson, test = "Chisq", vcov = vcov(m1_inpersonCL))
 
 
@@ -1292,14 +1079,90 @@ waldtest(m1_inperson_step2, m1_inperson, test = "Chisq", vcov = vcov(m1_inperson
 
 ```
 
+## Repeat analyses aggregating extortion type to remote, inperson and cobro de piso
+
+
+```{r models-1-wocp}
+
+enve_nona_wocp <- enve_nona
+
+levels(enve_nona_wocp$extortion_type) <- c("Remote","In person","In person","Cobro de piso")
+
+table(enve_nona$extortion_type)
+table(enve_nona_wocp$extortion_type)
+
+m1_wocp <- glm(formula = compliance_formula, data = enve_nona_wocp, family = binomial())  
+
+summary(m1_wocp)
+vif(m1_wocp, data = enve_nona_wocp) 
+
+logLik(m1_wocp)
+
+
+m1_wocp_step <- step(m1_wocp, direction = "both")
+
+summary(m1_wocp_step)
+logLik(m1_wocp_step)
+
+waldtest(m1_wocp_step, test = "Chisq")
+
+waldtest(m1_wocp_step, m1_wocp, test = "Chisq")
+
+car::vif(m1_wocp_step)
+
+lrtest(m1_wocp)
+lrtest(m1_wocp_step)
+lrtest(m1_wocp_step, m1_wocp)
+Anova(m1_wocp)
+Anova(m1_wocp_step)
+
+accuracy(m1_wocp)
+accuracy(m1_wocp_step)
+
+```
+
+Use Robust Clustered Errors
+
+
+```{r clustered-SE-asym-wocp}
+
+# m1_wocp, m1_wocpstep, m1_wocp_inc,  m1_wocp_bus, m1_wocp_state, m1_wocp_inc_bus
+
+#### Asymptotic Cluster SE
+## Individual-level clustering
+
+cluster_form <- ~ CVE_UNICA + CVE_ENT
+
+m1_wocpCL <- summaryCL(m1_wocp, cluster_form)
+m1_wocpCL
+
+csv.summaryCL(m1_wocpCL)
+
+m1_wocp_stepCL <- summaryCL(m1_wocp_step, cluster_form)
+m1_wocp_stepCL
+
+csv.summaryCL(m1_wocp_stepCL)
+
+
+waldtest(m1_wocp_step, m1_wocp, test = "Chisq", vcov = vcov(m1_wocpCL))
+
+
+```
+
+
 - Inperson (agg) wocp
 
 
 ```{r models-in-person_wocp}
 
-enve_inperson_wocp <- filter(enve_nona, extortion_type_wocp == "In person")
+enve_inperson_wocp <- enve_inperson
 
-m1_inperson_wocp <- glm(formula = compliance_formula2, 
+levels(enve_inperson_wocp$extortion_type) <- c("Remote","In person","In person","Cobro de piso")
+
+table(enve_inperson$extortion_type)
+table(enve_inperson_wocp$extortion_type)
+
+m1_inperson_wocp <- glm(formula = compliance_formula, 
                  data = enve_inperson_wocp, 
                  family = binomial())  
 
@@ -1320,6 +1183,8 @@ waldtest(m1_inperson_wocp_step, m1_inperson_wocp, test = "Chisq")
 
 car::vif(m1_inperson_wocp_step)
 
+lrtest(m1_inperson_wocp)
+lrtest(m1_inperson_wocp_step)
 lrtest(m1_inperson_wocp_step, m1_inperson_wocp)
 Anova(m1_inperson_wocp)
 Anova(m1_inperson_wocp_step)
@@ -1332,15 +1197,18 @@ accuracy(m1_inperson_wocp_step)
 m1_inperson_wocpCL <- summaryCL(m1_inperson_wocp, cluster_form)
 m1_inperson_wocpCL
 
+csv.summaryCL(m1_inperson_wocpCL)
+
 m1_inperson_wocp_stepCL <- summaryCL(m1_inperson_wocp_step, cluster_form)
 m1_inperson_wocp_stepCL
+
+csv.summaryCL(m1_inperson_wocp_stepCL)
 
 waldtest(m1_inperson_wocp_step, m1_inperson_wocp, test = "Chisq", vcov = vcov(m1_inperson_wocpCL))
 
 # using m1_step terms
 
-m1_inperson_wocp_step2 <- update(m1_step, 
-                             . ~ . - extortion_type,
+m1_inperson_wocp_step2 <- update(m1_step,
                              data = enve_inperson_wocp)
 
 
@@ -1353,6 +1221,8 @@ waldtest(m1_inperson_wocp_step2, m1_inperson_wocp, test = "Chisq")
 
 car::vif(m1_inperson_wocp_step2)
 
+lrtest(m1_inperson_wocp)
+lrtest(m1_inperson_wocp_step2)
 lrtest(m1_inperson_wocp_step2, m1_inperson_wocp)
 Anova(m1_inperson_wocp)
 Anova(m1_inperson_wocp_step2)
@@ -1366,6 +1236,8 @@ accuracy(m1_inperson_wocp_step2)
 
 m1_inperson_wocp_step2CL <- summaryCL(m1_inperson_wocp_step2, cluster_form)
 m1_inperson_wocp_step2CL
+
+csv.summaryCL(m1_inperson_step2CL)
 
 waldtest(m1_inperson_wocp_step2, m1_inperson_wocp, test = "Chisq", vcov = vcov(m1_inperson_wocpCL))
 
