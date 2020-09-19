@@ -1,7 +1,7 @@
 ---
 title: "Extortion in Mexico: Who pays and why?"
 author: "Patricio R. Estevez Soto"
-email: "patricio.estevez.14@ucl.ac.uk"
+email: "patricio.estevez@ucl.ac.uk"
 date: "`r Sys.Date()`"
 output:
   md_document:
@@ -223,7 +223,7 @@ We first load and arrange the area and victim level data
 ```{r test-setting}
 
 ### Change if not in testing settings
-params <- list(test = TRUE)
+#params <- list(test = TRUE)
 if(params$test){
     download("https://raw.githubusercontent.com/prestevez/datahouse/master/enve2014cuest_ciega_2014.dbf",
                       destfile = "enve2014cuest_ciega_2014.dbf", mode = "wb")
@@ -816,10 +816,10 @@ compliance_formula <- complied_bin_NA ~ extortion_type +
                                         scale(General, scale = FALSE) +
                                         scale(Derecho, scale = FALSE)
 
-m1 <- glm(formula = compliance_formula, data = enve_nona, family = binomial())  
+m1 <- glm(formula = compliance_formula, data = enve_nona, family = binomial())
 
 summary(m1)
-vif(m1, data = enve_nona) 
+vif(m1, data = enve_nona)
 
 logLik(m1)
 
@@ -902,12 +902,12 @@ compliance_formula2 <- complied_bin_NA ~ n_offenders_NA +
 
 enve_remote <- filter(enve_nona, extortion_type == "Remote")
 
-m1_remote <- glm(formula = compliance_formula2, 
-                 data = enve_remote, 
-                 family = binomial())  
+m1_remote <- glm(formula = compliance_formula2,
+                 data = enve_remote,
+                 family = binomial())
 
 summary(m1_remote)
-vif(m1_remote, data = enve_nona) 
+vif(m1_remote, data = enve_nona)
 
 logLik(m1_remote)
 
@@ -947,7 +947,7 @@ waldtest(m1_remote_step, m1_remote, test = "Chisq", vcov = vcov(m1_remoteCL))
 
 # using m1_step terms
 
-m1_remote_step2 <- update(m1_step, 
+m1_remote_step2 <- update(m1_step,
                              . ~ . - extortion_type,
                              data = enve_remote)
 
@@ -993,12 +993,12 @@ waldtest(m1_remote_step2, m1_remote, test = "Chisq", vcov = vcov(m1_remoteCL))
 
 enve_inperson <- filter(enve_nona, extortion_type_bin == "In person")
 
-m1_inperson <- glm(formula = compliance_formula, 
-                 data = enve_inperson, 
-                 family = binomial())  
+m1_inperson <- glm(formula = compliance_formula,
+                 data = enve_inperson,
+                 family = binomial())
 
 summary(m1_inperson)
-vif(m1_inperson, data = enve_nona) 
+vif(m1_inperson, data = enve_nona)
 
 logLik(m1_inperson)
 
@@ -1091,10 +1091,10 @@ levels(enve_nona_wocp$extortion_type) <- c("Remote","In person","In person","Cob
 table(enve_nona$extortion_type)
 table(enve_nona_wocp$extortion_type)
 
-m1_wocp <- glm(formula = compliance_formula, data = enve_nona_wocp, family = binomial())  
+m1_wocp <- glm(formula = compliance_formula, data = enve_nona_wocp, family = binomial())
 
 summary(m1_wocp)
-vif(m1_wocp, data = enve_nona_wocp) 
+vif(m1_wocp, data = enve_nona_wocp)
 
 logLik(m1_wocp)
 
@@ -1162,12 +1162,12 @@ levels(enve_inperson_wocp$extortion_type) <- c("Remote","In person","In person",
 table(enve_inperson$extortion_type)
 table(enve_inperson_wocp$extortion_type)
 
-m1_inperson_wocp <- glm(formula = compliance_formula, 
-                 data = enve_inperson_wocp, 
-                 family = binomial())  
+m1_inperson_wocp <- glm(formula = compliance_formula,
+                 data = enve_inperson_wocp,
+                 family = binomial())
 
 summary(m1_inperson_wocp)
-vif(m1_inperson_wocp, data = enve_nona) 
+vif(m1_inperson_wocp, data = enve_nona)
 
 logLik(m1_inperson_wocp)
 
